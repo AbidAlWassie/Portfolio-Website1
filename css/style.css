@@ -206,11 +206,56 @@ a {
   display: inline;
 }
 
+.card-skill {
+  text-align: center;
+  border-radius: 4px;
+  width: 200px;
+  height: 300px;
+  box-shadow: 1px 3px 5px rgba(41, 41, 41, 0.253);
+  margin-right: 50px;
+}
+
+.skill-name {
+  /* width: 150px; */
+  /* height: 150px; */
+}
+
+.skill-percentage-circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  /* border-radius: 50%; */
+}
+
+.skill-percentage-circle, .skill-percentage-number {
+  width: 100%;
+  height: 100%;
+}
+
+.skill-percentage-number {
+
+}
+
+.skill-percentage-number p{
+  font-size: 2rem;
+  position: relative;
+  top: -135px;
+  font-weight: 700;
+}
+
+.percentage-sign {
+  font-weight: 400;
+  font-size: 1.6rem;
+  position: relative;
+  bottom: 3px;
+  /* padding-bottom: 6px; */
+}
+
 .skills-list {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-between; */
 }
 
 .svg-skill {
@@ -225,19 +270,41 @@ a {
   height: 100%;
   fill: none;
   stroke: #e6e6e6;
-  stroke-width: 10;
+  stroke-width: 7;
   stroke-linecap: round;
   transform: translate(5px, 5px);
 }
 
 .svg-skill .circle-skill:nth-child(2) {
-  stroke-dasharray: 220;
-  stroke-dashoffset: 220;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
 }
 
-.skill1{stroke: #3e64ff;}
-.skill2{stroke: #3e64ff;}
-.skill3{stroke: #3e64ff;}
+.card-skill:nth-child(1) svg circle:nth-child(2){
+  stroke-dashoffset: calc(440 - (440 * 90) / 100);
+  stroke: #3e64ff;
+}
+
+.card-skill:nth-child(2) svg circle:nth-child(2){
+  stroke-dashoffset: calc(440 - (440 * 80) / 100);
+  stroke: #3e64ff;
+}
+
+.card-skill:nth-child(3) svg circle:nth-child(2){
+  stroke-dashoffset: calc(440 - (440 * 50) / 100);
+  stroke: #3e64ff;
+}
+
+/* .skill1{
+  stroke-dashoffset: calc(440 - (440 * 90) / 100);
+  stroke: #3e64ff;
+}
+.skill2{
+  stroke: #3e64ff;
+}
+.skill3{
+  stroke: #3e64ff;
+} */
 
 .page .heading {
   font-weight: 800;
