@@ -1,4 +1,5 @@
 @import url('../css/aos.css');
+@import url('../css/ionicons.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css');
@@ -127,12 +128,68 @@ a {
   width: 50%;
   opacity: 0.1;
   background: #3e82ff;
+  z-index: -1;
   /* height: 452px; */
 }
 
 .intro {
   text-align: center;
   margin: 300px 0;
+}
+
+.mouse {
+  display: flex;
+  justify-content: center;
+}
+
+.mouse-icon {
+  width: 70px;
+  height: 70px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: 45px;
+  /* right: 0; */
+  bottom: 0;
+  background: #edf0ff;
+  z-index: 1;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* .mouse-icon:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #edf0ff;
+  z-index: -1;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} */
+
+.mouse-wheel {
+  height: 70px;
+    margin: 2px auto 0;
+    display: block;
+    width: 30px;
+    background: transparent;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-animation: 1.6s ease infinite wheel-up-down;
+    -moz-animation: 1.6s ease infinite wheel-up-down;
+    animation: 1.6s ease infinite wheel-up-down;
+    color: #3e64ff;
+    font-size: 30px;
 }
 
 @media (min-width: 576px) {
