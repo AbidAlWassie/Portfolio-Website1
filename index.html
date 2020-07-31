@@ -43,7 +43,7 @@
         </div>
     </div>
     <div class="mouse">
-      <a href="javascript:void(0)" class="mouse-icon" style="-webkit-transform: rotate(45deg);
+      <a href="javascript:void(0)" id="mouseBtn" class="mouse-icon" style="-webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);" draggable="false">
         <div class="mouse-wheel" style="-webkit-transform: rotate(-45deg);
@@ -60,19 +60,19 @@
   
   <div class="nav-mobile">
     <ul>
-      <li><a href="javascript:void(0)" class="nav-mobile-items">Portfolio</a></li>
-      <li><a href="javascript:void(0)" class="nav-mobile-items">Work</a></li>
-      <li><a href="javascript:void(0)" class="nav-mobile-items">About</a></li>
-      <li><a href="javascript:void(0)" class="nav-mobile-items">Services</a></li>
-      <li><a href="javascript:void(0)" class="nav-mobile-items">Skills</a></li>
-      <li><a href="javascript:void(0)" class="nav-mobile-items">Contact</a></li>
+      <li><a href="javascript:void(0)" id="getToPortfolio" class="nav-mobile-items">Portfolio</a></li>
+      <li><a href="javascript:void(0)" id="getToWork" class="nav-mobile-items">Work</a></li>
+      <li><a href="javascript:void(0)" id="getToAbout" class="nav-mobile-items">About</a></li>
+      <li><a href="javascript:void(0)" id="getToServices" class="nav-mobile-items">Services</a></li>
+      <li><a href="javascript:void(0)" id="getToSkills" class="nav-mobile-items">Skills</a></li>
+      <li><a href="javascript:void(0)" id="getToContact" class="nav-mobile-items">Contact</a></li>
     </ul>
   </div>
 
   <div class="container">
     <div class="row">
       <div class="f-section">
-        <div class="portfolio-section1">
+        <div class="portfolio-section1 portfolio-nav">
           <div class="nav-desktop">
             <ul>
               <li><a href="javascript:void(0)" class="nav-desktop-items">Portfolio</a></li>
@@ -86,12 +86,13 @@
         </div>
   
         <div class="portfolio-section2">
-          <div class="page-1">
-            <h2 class="heading">Skills</h2>
-            <div class="skills-list">
+          <div class="page-1" id="page-1">
 
-              <div class="card-skill">
-                <div class="box">
+            <h2 class="heading horizontal-margin-a8">Skills</h2>
+
+            <div id="skillsSect" class="skills-container-circles">
+              <div class="card-skill responsive-margin">
+                <div class="skill-circle-container">
                   <h2 class="skill-name">HTML</h2>
                   <div class="skill-percentage-circle">
                     <svg class="svg-skill">
@@ -105,8 +106,8 @@
                 </div>
               </div>
   
-              <div class="card-skill">
-                <div class="box">
+              <div class="card-skill responsive-margin">
+                <div class="skill-circle-container">
                   <h2 class="skill-name">CSS</h2>
                   <div class="skill-percentage-circle">
                     <svg class="svg-skill">
@@ -120,8 +121,8 @@
                 </div>
               </div>
   
-              <div class="card-skill">
-                <div class="box">
+              <div class="card-skill responsive-margin">
+                <div class="skill-circle-container">
                   <h2 class="skill-name">JavaScript</h2>
                   <div class="skill-percentage-circle">
                     <svg class="svg-skill">
@@ -129,12 +130,58 @@
                       <circle class="circle-skill skill3" cx="70" cy="70" r="70"></circle>
                     </svg>
                     <div class="skill-percentage-number">
-                      <p>50<span class="percentage-sign"><sup>%</sub></span></p>
+                      <p>60<span class="percentage-sign"><sup>%</sub></span></p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            <div class="skills-container-bars vertical-margin-c1 margin-bottom-b2">
+              <div class="bar-container">
+                <div class="skill-info">
+                  <div class="skill-item progress-bar-name">
+                    <h4>UX/UI Design</h4>
+                  </div>
+                  <div class="skill-item progress-bar-percentage">
+                    <h4 class="percentage-number">85%</h4>
+                  </div>
+                <div class="progress-bar" id="bar1"></div>
+                </div>
+
+                <div class="skill-info">
+                  <div class="skill-item progress-bar-name">
+                    <h4>Responsive Design</h4>
+                  </div>
+                  <div class="skill-item progress-bar-percentage">
+                    <h4 class="percentage-number">90%</h4>
+                  </div>
+                  <div class="progress-bar" id="bar2" ></div>
+                </div>
+
+                <div class="skill-info">
+                  <div class="skill-item progress-bar-name">
+                    <h4>Photoshop</h4>
+                  </div>
+                  <div class="skill-item progress-bar-percentage">
+                    <h4 class="percentage-number">70%</h4>
+                  </div>
+                  <div class="progress-bar" id="bar3" ></div>
+                </div>
+                
+                <div class="skill-info">
+                  <div class="skill-item progress-bar-name">
+                    <h4>Illustrator</h4>
+                  </div>
+                  <div class="skill-item progress-bar-percentage">
+                    <h4 class="percentage-number">80%</h4>
+                  </div>
+                  <div class="progress-bar" id="bar4" ></div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
 
           </div>
         </div>
