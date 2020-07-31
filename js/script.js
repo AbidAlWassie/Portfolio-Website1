@@ -33,14 +33,15 @@ window.onload = function () {
   // buttons config
   var mouseBtn = document.getElementById("mouseBtn");
 
-  var portfolioBtn = document.getElementById("portfolioBtn");
-  var workBtn = document.getElementById("workBtn");
-  var aboutBtn = document.getElementById("aboutBtn");
-  var servicesBtn = document.getElementById("servicesBtn");
-  var skillsBtn = document.getElementById("skillsBtn");
-  var contactBtn = document.getElementById("contactBtn");
+  var portfolioBtn = document.getElementById("getToPortfolio");
+  var workBtn = document.getElementById("getToWork");
+  var aboutBtn = document.getElementById("getToAbout");
+  var servicesBtn = document.getElementById("getToServices");
+  var skillsBtn = document.getElementById("getToSkills");
+  var contactBtn = document.getElementById("getToContact");
   
   mouseBtn.addEventListener("click", getToSkillsSect);
+  skillsBtn.addEventListener("click", getToSkillsSect);
 
   
   function getToSkillsSect() {
