@@ -13,6 +13,7 @@ window.onload = function () {
       var run = ease(timeElapsed, startPosition, distance, duration);
       window.scrollTo(0, run);
       if (timeElapsed < duration) requestAnimationFrame(animation);
+      console.log("timeElapsed : " + timeElapsed + " duration : " + duration);
     }
 
     function ease(t, b, c, d) {
@@ -27,27 +28,30 @@ window.onload = function () {
   
   // distinations config
   var skillsLocation = "#skillsSect";
-  // var 
+  // var startLocation = ".navbar";
   
 
   // buttons config
   var mouseBtn = document.getElementById("mouseBtn");
 
   var portfolioBtn = document.getElementById("getToPortfolio");
-  var workBtn = document.getElementById("getToWork");
+  var projectsBtn = document.getElementById("getToProjects");
   var aboutBtn = document.getElementById("getToAbout");
   var servicesBtn = document.getElementById("getToServices");
   var skillsBtn = document.getElementById("getToSkills");
   var contactBtn = document.getElementById("getToContact");
+  var topBtn = document.getElementById("getToTop");
+  
   
   mouseBtn.addEventListener("click", getToSkillsSect);
   skillsBtn.addEventListener("click", getToSkillsSect);
 
   
+
+  
   function getToSkillsSect() {
     smoothScroll(skillsLocation, 500);
   }
-
 
   const menuBtn = document.querySelector(".menu-btn");
 
@@ -72,34 +76,9 @@ window.onload = function () {
 
   function onToggle() {
     if (sideMenu.style.transform == 'translateY(55px)') {
-      // && openSlide.className === "hamburger hamburger--collapse menu-btn"
-      // openSlide.className = "hamburger hamburger--collapse is-active menu-btn";
       sideMenu.style.transform = 'translateY(-600px)';
-      // sideMenu.className = "";
     } else {
-      // openSlide.className = "hamburger hamburger--collapse menu-btn";
       sideMenu.style.transform = 'translateY(55px)';
-      // sideMenu.className = "hide";
-    }
-  }
-
-
-
-  var sideMenu = document.getElementById('side-menu');
-  var openSlide = document.getElementById('menuBtn');
-
-  document.getElementById('menuBtn').addEventListener('click', onToggle);
-
-  function onToggle() {
-    if (sideMenu.style.transform == 'translateY(55px)') {
-      // && openSlide.className === "hamburger hamburger--collapse menu-btn"
-      // openSlide.className = "hamburger hamburger--collapse is-active menu-btn";
-      sideMenu.style.transform = 'translateY(-600px)';
-      // sideMenu.className = "";
-    } else {
-      // openSlide.className = "hamburger hamburger--collapse menu-btn";
-      sideMenu.style.transform = 'translateY(55px)';
-      // sideMenu.className = "hide";
     }
   }
 
@@ -111,15 +90,59 @@ window.onload = function () {
     if (maxWidth.matches) {
       openSlide.className = "menu-btn";
       showMenu = false;
-      // sideMenu.className = "hide";
     } else {
-      sideMenu.style.transform = 'translateY(-600px)';
       openSlide.className = "menu-btn close";
       showMenu = true;
     }
   }
 
+  
+var scrollWindow = function() {
+  $(window).scroll(function(){
+    var $w = $(this),
+        st = $w.scrollTop(),
+        navbar = $('.ftco_navbar'),
+        sd = $('.js-scroll-wrap');
 
+    if (st > 150) {
+      if ( !navbar.hasClass('scrolled') ) {
+        navbar.addClass('scrolled');	
+      }
+    } 
+    if (st < 150) {
+      if ( navbar.hasClass('scrolled') ) {
+        navbar.removeClass('scrolled sleep');
+      }
+    } 
+    if ( st > 350 ) {
+      if ( !navbar.hasClass('awake') ) {
+        navbar.addClass('awake');	
+      }
+      
+      if(sd.length > 0) {
+        sd.addClass('sleep');
+      }
+    }
+    if ( st < 350 ) {
+      if ( navbar.hasClass('awake') ) {
+        navbar.removeClass('awake');
+        navbar.addClass('sleep');
+      }
+      if(sd.length > 0) {
+        sd.removeClass('sleep');
+      }
+    }
+  });
+};
+scrollWindow();
 
+  // window.onscroll = function() {
+  //   scrollFunction()
+  // };
+  // function scrollFunction() {
+  //   if (document.body.scrollTop <= 200 || document.documentElement.scrollTop <= 200) {
+  //     navbar.className = "navbar";
+  //   }
+  // }
 
 }
