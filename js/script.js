@@ -69,80 +69,102 @@ window.onload = function () {
     }
   }
 
-  var sideMenu = document.getElementById('side-menu');
+  //Media Queries
+  var navbarNav = document.querySelector('.navbar-nav');
+  
   var openSlide = document.getElementById('menuBtn');
 
-  document.getElementById('menuBtn').addEventListener('click', onToggle);
-
-  function onToggle() {
-    if (sideMenu.style.transform == 'translateY(55px)') {
-      sideMenu.style.transform = 'translateY(-600px)';
-    } else {
-      sideMenu.style.transform = 'translateY(55px)';
-    }
-  }
+  
 
   var maxWidth = window.matchMedia("(max-width: 1030px)");
   functionQuery(maxWidth);
   maxWidth.addListener(functionQuery);
+  var navbar = document.querySelector('.navbar');
 
   function functionQuery(maxWidth) {
+
     if (maxWidth.matches) {
+      navbarNav.style.top = '-600px';
       openSlide.className = "menu-btn";
+      // navbar.classList.remove('nav-expand');
       showMenu = false;
     } else {
+      navbarNav.style.top = '0';
       openSlide.className = "menu-btn close";
+      navbar.classList.remove('nav-expand');
       showMenu = true;
     }
+
+    openSlide.addEventListener('click', onToggle);
+
+    function onToggle() {
+      console.log(navbar);
+      if (navbarNav.style.top == '74px') {
+        navbarNav.style.top = '-600px';
+        navbar.classList.remove('nav-expand');
+      } else {
+        navbarNav.style.top = '74px';
+        navbar.classList.add('nav-expand');
+      }
+    }
+    
   }
 
-  
-var scrollWindow = function() {
-  $(window).scroll(function(){
-    var $w = $(this),
-        st = $w.scrollTop(),
-        navbar = $('.ftco_navbar'),
-        sd = $('.js-scroll-wrap');
-
-    if (st > 150) {
-      if ( !navbar.hasClass('scrolled') ) {
-        navbar.addClass('scrolled');	
-      }
-    } 
-    if (st < 150) {
-      if ( navbar.hasClass('scrolled') ) {
-        navbar.removeClass('scrolled sleep');
-      }
-    } 
-    if ( st > 350 ) {
-      if ( !navbar.hasClass('awake') ) {
-        navbar.addClass('awake');	
-      }
-      
-      if(sd.length > 0) {
-        sd.addClass('sleep');
-      }
-    }
-    if ( st < 350 ) {
-      if ( navbar.hasClass('awake') ) {
-        navbar.removeClass('awake');
-        navbar.addClass('sleep');
-      }
-      if(sd.length > 0) {
-        sd.removeClass('sleep');
-      }
-    }
+  $(document).ready(function(){
+    var scrollWindow = function() {
+      $(window).scroll(function(){
+        var $w = $(this),
+            st = $w.scrollTop(),
+            navbar = $(".navbar"),
+            sd = $(".js-scroll-wrap");
+            navLink = $(".nav-link");
+            navbarExtended = $(".navbar-nav");
+            brandOtherLetters = $(".otherLetters");
+            btnLine = $(".btn-line");
+    
+        if (st > 150) {
+          if ( !navbar.hasClass("scrolled") ) {
+            navbar.addClass("scrolled");	
+            navLink.addClass("nav-link-dark");
+            navbarExtended.addClass("navbar-nav-dark");
+            brandOtherLetters.addClass("brandLettersDark");
+            btnLine.addClass("btn-line-dark");
+          }
+        } 
+        if (st < 150) {
+          if ( navbar.hasClass("scrolled") ) {
+            navbar.removeClass("scrolled sleep");
+            navLink.removeClass("nav-link-dark");
+            navbarExtended.removeClass("navbar-nav-dark");
+            brandOtherLetters.removeClass("brandLettersDark");
+            btnLine.removeClass("btn-line-dark");
+          }
+        } 
+        if ( st > 350 ) {
+          if ( !navbar.hasClass("awake") ) {
+            navbar.addClass("awake");	
+          }
+          
+          if(sd.length > 0) {
+            sd.addClass("sleep");
+          }
+        }
+        if ( st < 350 ) {
+          if ( navbar.hasClass("awake") ) {
+            navbar.removeClass("awake");
+            navbar.addClass("sleep");
+          }
+          if(sd.length > 0) {
+            sd.removeClass("sleep");
+          }
+        }
+      });
+    };
+    scrollWindow();
   });
-};
-scrollWindow();
 
-  // window.onscroll = function() {
-  //   scrollFunction()
-  // };
-  // function scrollFunction() {
-  //   if (document.body.scrollTop <= 200 || document.documentElement.scrollTop <= 200) {
-  //     navbar.className = "navbar";
-  //   }
-  // }
+
+
+  
 
 }

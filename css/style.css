@@ -32,7 +32,6 @@ body {
 
 
 ul, ol, dl {
-  /* margin-top: 0; */
   margin-bottom: 1rem;
   list-style-type: none;
 }
@@ -81,14 +80,24 @@ a {
   /* padding: 0 20px; */
 }
 
-/* .navbar-fixed {
-  background: rgb(248, 248, 248) !important;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+.nav-expand {
+  height: 424px;
+  position: relative;
+  
+}
+
+/* .navbar-mobile {
+  top: 74px;
+} */
+
+/* .active{
+  color: white;
+  background-color: red;
 } */
 
 .scrolled {
   position: fixed;
-  background: rgb(248, 248, 248) !important;
+  background: rgb(255, 255, 255) !important;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   margin-top: -130px;
 }
@@ -110,6 +119,7 @@ a {
   margin: 30px 0 0 400px;
   font-weight: 400;
   font-family: "Poppins";
+  position: relative;
 }
 
 .nav-link {
@@ -121,13 +131,13 @@ a {
 
 .navbar-brand {
   font-weight: 700;
-  /* font-family: "Titillium Web"; */
   position: relative;
-  /* left: 8px; */
   top: 12px;
   font-size: 1.7rem;
   margin-top: 4px;
   font-family: Poppins;
+  /* left: 8px; */
+  /* font-family: "Titillium Web"; */
 }
 
 .navbar-brand .firstLetter {
@@ -172,16 +182,25 @@ a {
 .info {
   display: flex;
   justify-content: center;
+  height: 960px;
+  align-items: center;
+  /* transition: all 200ms ease-in-out; */
   /* position: relative; */
-  margin: auto 0;
+  /* margin: 400px 0; */
+}
+
+.align-items-center {
+
 }
 
 .intro {
-  /* display: flex; */
-  position: absolute;
-  bottom: 400px;
-  margin: auto 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  /* position: absolute;
+  bottom: 400px; */
+  /* margin: auto 0; */
+  /* text-align: center; */
 }
 
 
@@ -324,8 +343,6 @@ a {
   margin-left: 15px;
 }
 
-
-
 .horizontal-margin-20 {
   margin-right: 20px;
   margin-left: 20px;
@@ -350,8 +367,6 @@ a {
   margin-right: 100px;
   margin-left: 100px;
 }
-
-
 
 .vertical-margin-50 {
   margin: 50px auto;
@@ -551,8 +566,8 @@ a {
   position: relative;
   right: -15px;
   top: -23px;
-  padding-left: 10px;
-  padding-right: 10px;
+  /* padding-left: 10px;
+  padding-right: 10px; */
 }
 
 
@@ -576,6 +591,10 @@ a {
 
 .menu-btn.close {
   transform: translate(0, 0);
+}
+
+.menu-btn.close .btn-line{
+  background: #ff0000;
 }
 
 .menu-btn.close .btn-line:nth-child(1) {
@@ -640,19 +659,6 @@ a {
   }
 }
 
-/* .mouse-icon:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #edf0ff;
-  z-index: -1;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-} */
 
 .mouse-wheel {
   height: 70px;
@@ -670,128 +676,4 @@ a {
   color: #3e64ff;
   font-size: 30px;
 }
-
-@media (min-width: 576px) {
-  /* .container {
-    max-width: 560px; }  */
-}
-
-@media (min-width: 798px) {
-  .container {
-    max-width: 798px; } 
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 980px;
-  }
-  
-}
-@media (min-width: 1250px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-@media (max-width: 1250px) {
-  .navbar-nav {
-    margin: 30px 0 0 220px;
-  }
-}
-
-@media (max-width: 1030px) {
-
-  /* .f-section {
-    grid-template-columns: 1fr 3fr;
-  } */
-  .f-section {
-    grid-template-columns: 1fr 3fr;
-    display: flex;
-    justify-content: center;
-  }
-
-  ul {
-    margin-top: 40px;
-    margin-right: 60px;
-    padding: 0;
-  }
-  /* .portfolio-nav {
-    display: none;
-  } */
-  .hero-section1 {
-    /* height: 90.8vh; */
-  }
-}
-
-@media (max-width: 992px) {
-  .navbar-fixed {
-    background: #000 !important;
-  }
-
-  .navbar-brand {
-    /* color: #fff; */
-  }
-
-
-  .nav-mobile, .nav-mobile-items {
-    display: block;
-  }
-
-  .portfolio-section1 {
-    width: 0;
-  }
-
-  .nav-desktop {
-    display: none;
-  }
-
-  .navbar-nav {
-    display: none;
-  }
-
-  .menu-btn {
-    display: block;
-    /* position: fixed; */
-    margin: auto 0 auto auto;
-  }
-
-  .f-section {
-   grid-template-columns: 1fr; 
-  }
-  
-  .skills-container-circles{}
-}
-
-@media (max-width: 770px) {
-  .skills-container-circles {
-    display: grid;
-    grid-template-columns: 1fr;
-    position: relative;
-  }
-
-  .bar-container {
-    grid-template-columns: 1fr;
-  }
-
-  .card-skill {
-    width: 100%;
-  }
-
-  .responsive-margin {
-    margin-right: 0;
-    margin-left: 0;
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  .nav-desktop {
-    display: none;
-  }
-  
-}
-
-/* @media (max-width: 1090px) {
-  .navbar-nav {
-    margin: 30px 0 0 300px;
-  }
-} */
 
