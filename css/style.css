@@ -83,7 +83,7 @@ a {
 .nav-expand {
   height: 424px;
   position: relative;
-  
+  transition: all 300ms ease-in-out;
 }
 
 /* .navbar-mobile {
