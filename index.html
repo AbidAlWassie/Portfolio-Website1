@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initialz-scale=1.0">
   <title>Welcome to my Portfolio Website</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/glider.css">
   <link rel="stylesheet" href="css/media-queries.css">
-  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"> -->
 </head>
 <body>
   <nav class="navbar">
@@ -15,9 +17,9 @@
       </a>
       <ul class="navbar-nav nav-items">
         <li class="nav-item"><a href="#section1" class="nav-link" draggable="false">Home</a></li>
-        <li class="nav-item"><a href="#section2" class="nav-link" draggable="false">Portfolio</a></li>
-        <li class="nav-item"><a href="#section3" class="nav-link" draggable="false">About</a></li>
-        <li class="nav-item"><a href="#section4" class="nav-link" draggable="false">Resume</a></li>
+        <li class="nav-item"><a href="#portfolio-section" class="nav-link" draggable="false">Portfolio</a></li>
+        <li class="nav-item"><a href="#skills-section" class="nav-link" draggable="false">Skills</a></li>
+        <li class="nav-item"><a href="#about-section" class="nav-link" draggable="false">About</a></li>
         <li class="nav-item"><a href="#section5" class="nav-link" draggable="false">Services</a></li>
         <li class="nav-item"><a href="#section6" class="nav-link" draggable="false">My Blog</a></li>
         <li class="nav-item"><a href="#section7" class="nav-link" draggable="false">Contact</a></li>
@@ -29,19 +31,31 @@
       </div>
     </div>
   </nav>
-  <div class="hero-section1 js-fullheight scrollspy" id="section-1">
+  <div class="nav-mobile">
+    <ul>
+      <!-- <li><a href="javascript:void(0)" id="getToProjects" class="nav-mobile-items">Projects</a></li> -->
+      <li><a href="#portfolio-section" class="nav-mobile-items">Portfolio</a></li>
+      <li><a href="javascript:void(0)" id="getToSkills" class="nav-mobile-items">Skills</a></li>
+      <li><a href="javascript:void(0)" id="getToAbout" class="nav-mobile-items">About</a></li>
+      <li><a href="javascript:void(0)" id="getToServices" class="nav-mobile-items">Services</a></li>
+      <li><a href="javascript:void(0)" id="getToContact" class="nav-mobile-items">Contact</a></li>
+      <!-- <li><a href="javascript:void(0)" id="getToTop" class="nav-mobile-items">Top</a></li> -->
+    </ul>
+  </div>
+  <div class="hero-section1 js-fullheight" id="section-1">
     <div class="overlay-half-x"></div>
       <div class="container">
         <div class="info">
           <div class="intro align-items-center">
             <span class="subheading">Hey, I am</span>
             <h1>Abid Al-Wasi</h1>
-            <h2>I'm a Front-end Web Developer</h2>
+            <h2 class="text-center">I'm a Front-end Web Developer and
+            <br> an ex-Muslim Atheist</h2>
           </div>
         </div>
     </div>
     <div class="mouse">
-      <a href="javascript:void(0)" id="mouseBtn" class="mouse-icon" style="-webkit-transform: rotate(45deg);
+      <a href="#portfolio-section" id="mouseBtn" class="mouse-icon" style="-webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);" draggable="false">
         <div class="mouse-wheel" style="-webkit-transform: rotate(-45deg);
@@ -56,38 +70,54 @@
     </div>
   </div>
   
-  <div class="nav-mobile">
-    <ul>
-      <!-- <li><a href="javascript:void(0)" id="getToProjects" class="nav-mobile-items">Projects</a></li> -->
-      <li><a href="javascript:void(0)" id="getToPortfolio" class="nav-mobile-items">Portfolio</a></li>
-      <li><a href="javascript:void(0)" id="getToSkills" class="nav-mobile-items">Skills</a></li>
-      <li><a href="javascript:void(0)" id="getToAbout" class="nav-mobile-items">About</a></li>
-      <li><a href="javascript:void(0)" id="getToServices" class="nav-mobile-items">Services</a></li>
-      <li><a href="javascript:void(0)" id="getToContact" class="nav-mobile-items">Contact</a></li>
-      <!-- <li><a href="javascript:void(0)" id="getToTop" class="nav-mobile-items">Top</a></li> -->
-    </ul>
-  </div>
-
   <div class="container">
     <div class="row">
-      <div class="f-section">
-        <div class="portfolio-section1 portfolio-nav">
+      <div class="container-side-nav">
+        <div class="portfolio-section1 .portfolio-nav-fixed">
           <div class="nav-desktop">
             <ul>
               <!-- <li><a href="javascript:void(0)" class="nav-desktop-items">Projects</a></li> -->
-              <li><a href="javascript:void(0)" class="nav-desktop-items">Portfolio</a></li>
-              <li><a href="javascript:void(0)" class="nav-desktop-items">Skills</a></li>
-              <li><a href="javascript:void(0)" class="nav-desktop-items">About</a></li>
-              <li><a href="javascript:void(0)" class="nav-desktop-items">Services</a></li>
-              <li><a href="javascript:void(0)" class="nav-desktop-items">Contact</a></li>
+              <li><a href="javascript:void(0)" class="nav-desktop-items desk-link side-nav-active">Portfolio</a></li>
+              <li><a href="javascript:void(0)" class="nav-desktop-items desk-link">Skills</a></li>
+              <li><a href="javascript:void(0)" class="nav-desktop-items desk-link">About</a></li>
+              <li><a href="javascript:void(0)" class="nav-desktop-items desk-link">Services</a></li>
+              <li><a href="javascript:void(0)" class="nav-desktop-items desk-link">Contact</a></li>
             </ul>
           </div>
         </div>
+      </div>
+          <div class="container-content">
+            <div class="heading-container">
+              <h2 class="heading smscr-margin-10" id="portfolio-section">My Work</h2>
+              <a href="javascript:void(0)" class="heading-link smscr-margin-10"><i class="fa fa-arrow-right"></i> View all</a>
+            </div>
+            <div class="glider-contain">
+              <div class="glider">
+                  <div class="project-item"><img src="img/img-1.jpg" alt=""></div>
+                  <div class="project-item"><img src="img/img-2.jpg" alt=""></div>
+                  <div class="project-item"><img src="img/img-3.jpg" alt=""></div>
+                  <div class="project-item"><img src="img/img-4.jpg" alt=""></div>
+                  <div class="project-item"><img src="img/img-5.jpg" alt=""></div>
+              </div>
+                <button class="glider-prev">
+                  <i class="fa fa-chevron-left"></i>
+                </button>
+                <button class="glider-next">
+                  <i class="fa fa-chevron-right"></i>
+                </button>
+            </div>
+          </div>
+    </div>
+    </div>
+  <div class="container">
+    <div class="row">
+      <div class="f-section">
+        <div class="container-side-nav"></div>
   
-        <div class="portfolio-section2">
-          <div class="page-1 scrollspy" id="section-2">
+        <div class="container-content" id="skills-section">
+          <div class="page-2">
 
-            <h2 class="heading horizontal-margin-20">Skills</h2>
+            <h2 class="heading">Skills</h2>
 
             <div id="skillsSect" class="skills-container-circles">
               <div class="card-skill responsive-margin">
@@ -168,6 +198,17 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+      <div class="container-side-nav"></div>
+        <div class="container-content" id="about-section">
+          <div class="row">
+            <h2 class="heading">About me</h2>
+            <p>I'm a Front-End Web Developer for over 3 years of experience. 
+              My range of work includes Responsive Design, some basic Javascript, and JQuery.
+              <br>
+              Nowadays, I'm spending most of my time learning and working on my personal projects.</p>
           </div>
         </div>
       </div>
@@ -175,22 +216,34 @@
   </div>
   <script
   src="js/jquery-3.5.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+  <script src="js/glider.min.js"></script>
   <script src="js/script.js"></script>
   <script>
-  $(window).bind('scroll', function() {
-    var currentTop = $(window).scrollTop();
-    var elems = $('.scrollspy');
-    elems.each(function(index){
-      var elemTop 	= $(this).offset().top;
-      var elemBottom 	= elemTop + $(this).height();
-      if(currentTop >= elemTop && currentTop <= elemBottom){
-        var id 		= $(this).attr('id');
-        var navElem = $('a[href="#' + id+ '"]');
-    navElem.parent().addClass('active').siblings().removeClass( 'active' );
+    new Glider(document.querySelector(".glider"), {
+      slidesToShow: 1,
+      draggable: true,
+      arrows: {
+        prev: ".glider-prev",
+        next: ".glider-next"
+      },
+      responsive: [
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
       }
-    })
-}); 
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    }
+  ]
+    });
   </script>
 </body>
 </html>
