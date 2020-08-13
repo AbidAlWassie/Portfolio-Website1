@@ -7,6 +7,13 @@
 }
 
 @media (max-width: 1030px) {
+  .container-content {
+    margin: 0 0 0 0;
+    /* position: relative; */
+}
+  .nav-desktop {
+    display: none;
+  }
 
   .f-section {
     grid-template-columns: 1fr 3fr;
@@ -46,7 +53,7 @@
     flex-direction: column;
     height: 350px;
     width: 100%;
-    position: absolute;
+    position: relative;
     top: -600px;
     /* right: 0;
     left: 0; */
@@ -83,9 +90,7 @@
     width: 0;
   }
 
-  .nav-desktop {
-    display: none;
-  }
+  
 
 
   .menu-btn {
@@ -120,22 +125,39 @@
     background: #c7c7c7 !important;
   }
   
-  .skills-container-circles{}
+  
+}
+
+@media (max-width: 790px) {
+  .skills-container-circles {
+    grid-template-columns: 2fr;
+  }
 }
 
 @media (max-width: 770px) {
   .skills-container-circles {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 0.7fr;
     position: relative;
+    justify-content: center;
   }
 
   .bar-container {
     grid-template-columns: 1fr;
+    margin: 0 auto;
   }
 
   .card-skill {
     width: 100%;
+  }
+
+  /* .smscr-margin-10 {
+    margin-left: 10px;
+    margin-right: 10px;
+  } */
+
+  .lgscr-margin-10 {
+    margin: 0;
   }
 
   .responsive-margin {
@@ -161,19 +183,59 @@
     max-width: 560px; }  */
 }
 
-@media (min-width: 798px) {
+/* @media (min-width: 714px) {
   .container {
-    max-width: 798px; } 
+    max-width: 560px; } 
+} */
+
+@media (min-width: 798px) {
+  /* .container {
+    max-width: 798px; }  */
+}
+
+@media (min-width: 850px) {
+  .container {  max-width: 700px; } 
 }
 
 @media (min-width: 992px) {
   .container {
     max-width: 980px;
   }
+
+  .container-side-nav {
+    max-width: 220px;
+  }
+
+  .container-content {
+    max-width: 760px;
+  }
   
 }
+
+@media (max-width: 1030px) {
+  .container {
+    max-width:800px;
+  }
+  .container-side-nav {
+    max-width: 0;
+  }
+
+  .container-content {
+    max-width: 100%;
+  }
+}
+
 @media (min-width: 1250px) {
   .container {
     max-width: 1140px;
   }
+
+  .container-side-nav {
+    max-width: 380px;
+  }
+
+  .container-content {
+    max-width: 760px;
+  }
 }
+
