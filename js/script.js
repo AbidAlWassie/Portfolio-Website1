@@ -48,63 +48,99 @@ window.onload = function () {
             sd.removeClass("sleep");
           }
         }
+        // if (st >= 1023) {
+        //   var deskLink = $(".desk-link");
+        //   if ( deskLink.hasClass("side-nav-active") ) {
+        //     deskLink.removeClass("side-nav-active")
+        //   } else {
+        //     deskLink.addClass("side-nav-active")
+        //   }
+        // }
+        // console.log(st);
       });
     };
     scrollWindow();
+
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 500, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
   });
 
-  function smoothScroll(target, duration) {
-    var target = document.querySelector(target);
-    var targetPosition = target.getBoundingClientRect().top;
-    var startPosition = window.pageYOffset;
-    var distance = targetPosition - startPosition;
-    var startTime = null;
+  // function smoothScroll(target, duration) {
+  //   var target = document.querySelector(target);
+  //   var targetPosition = target.getBoundingClientRect().top;
+  //   var startPosition = window.pageYOffset;
+  //   var distance = targetPosition - startPosition;
+  //   var startTime = null;
 
-    function animation(currentTime) {
-      if(startTime === null) startTime = currentTime;
-      var timeElapsed = currentTime - startTime;
-      var run = ease(timeElapsed, startPosition, distance, duration);
-      window.scrollTo(0, run);
-      if (timeElapsed < duration) requestAnimationFrame(animation);
-      console.log("timeElapsed : " + timeElapsed + " duration : " + duration);
-    }
+  //   function animation(currentTime) {
+  //     if(startTime === null) startTime = currentTime;
+  //     var timeElapsed = currentTime - startTime;
+  //     var run = ease(timeElapsed, startPosition, distance, duration);
+  //     window.scrollTo(0, run);
+  //     if (timeElapsed < duration) requestAnimationFrame(animation);
+  //     console.log("timeElapsed : " + timeElapsed + " duration : " + duration);
+  //   }
 
-    function ease(t, b, c, d) {
-      t /= d / 2;
-      if (t < 1) return c / 2 * t * t + b;
-      t--;
-      return -c / 2 * (t * (t - 2) - 1) + b;
-    }
+  //   function ease(t, b, c, d) {
+  //     t /= d / 2;
+  //     if (t < 1) return c / 2 * t * t + b;
+  //     t--;
+  //     return -c / 2 * (t * (t - 2) - 1) + b;
+  //   }
 
-    requestAnimationFrame(animation);
-  }
+  //   requestAnimationFrame(animation);
+  // }
   
-  // distinations config
-  var skillsLocation = ".heading";
-  // var startLocation = ".navbar";
-  
-
-  // buttons config
-  var mouseBtn = document.getElementById("mouseBtn");
-
-  var portfolioBtn = document.getElementById("getToPortfolio");
-  var projectsBtn = document.getElementById("getToProjects");
-  var aboutBtn = document.getElementById("getToAbout");
-  var servicesBtn = document.getElementById("getToServices");
-  var skillsBtn = document.getElementById("getToSkills");
-  var contactBtn = document.getElementById("getToContact");
-  var topBtn = document.getElementById("getToTop");
-  
-  
-  mouseBtn.addEventListener("click", getToSkillsSect);
-  skillsBtn.addEventListener("click", getToSkillsSect);
-
+  // // distinations config
+  // var portfolioLocation = ".work-section";
+  // var skillsLocation = ".heading";
+  // // var startLocation = ".navbar";
   
 
+  // // buttons config
+  // var mouseBtn = document.getElementById("mouseBtn");
+
+  // var portfolioBtn = document.getElementById("getToPortfolio");
+  // var projectsBtn = document.getElementById("getToProjects");
+  // var aboutBtn = document.getElementById("getToAbout");
+  // var servicesBtn = document.getElementById("getToServices");
+  // var skillsBtn = document.getElementById("getToSkills");
+  // var contactBtn = document.getElementById("getToContact");
+  // var topBtn = document.getElementById("getToTop");
   
-  function getToSkillsSect() {
-    smoothScroll(skillsLocation, 500);
-  }
+  
+  // mouseBtn.addEventListener("click", getToPortfolioSect);
+  // skillsBtn.addEventListener("click", getToSkillsSect);
+
+  
+
+  
+  // function getToPortfolioSect() {
+  //   smoothScroll(portfolioLocation, 500);
+  // }
+
+  // function getToSkillsSect() {
+  //   smoothScroll(skillsLocation, 500);
+  // }
 
   const menuBtn = document.querySelector(".menu-btn");
 
@@ -156,11 +192,11 @@ window.onload = function () {
 
     function onToggle() {
       console.log(navbar);
-      if (navbarNav.style.top == '74px') {
+      if (navbarNav.style.top == '10px') {
         navbarNav.style.top = '-600px';
         navbar.classList.remove('nav-expand');
       } else {
-        navbarNav.style.top = '74px';
+        navbarNav.style.top = '10px';
         navbar.classList.add('nav-expand');
       }
     }
