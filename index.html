@@ -21,7 +21,6 @@
         <li class="nav-item"><a href="#skills-section" class="nav-link" draggable="false">Skills</a></li>
         <li class="nav-item"><a href="#about-section" class="nav-link" draggable="false">About</a></li>
         <li class="nav-item"><a href="#section5" class="nav-link" draggable="false">Services</a></li>
-        <li class="nav-item"><a href="#section6" class="nav-link" draggable="false">My Blog</a></li>
         <li class="nav-item"><a href="#section7" class="nav-link" draggable="false">Contact</a></li>
       </ul>
       <div class="menu-btn" id="menuBtn">
@@ -93,11 +92,11 @@
             </div>
             <div class="glider-contain">
               <div class="glider">
-                  <div class="project-item"><img src="img/img-1.jpg" alt=""></div>
-                  <div class="project-item"><img src="img/img-2.jpg" alt=""></div>
-                  <div class="project-item"><img src="img/img-3.jpg" alt=""></div>
-                  <div class="project-item"><img src="img/img-4.jpg" alt=""></div>
-                  <div class="project-item"><img src="img/img-5.jpg" alt=""></div>
+                  <div class="project-item"><img src="img/img-1.jpg" alt=""><div class="project-info"><p>Responsive Web Design</p></div></div>
+                  <div class="project-item"><img src="img/img-2.jpg" alt=""><div class="project-info"><p>Landing Page</p></div></div>
+                  <div class="project-item"><img src="img/img-3.jpg" alt=""><div class="project-info"><p>Portfolio Website</p></div></div>
+                  <div class="project-item"><img src="img/img-4.jpg" alt=""><div class="project-info"><p>Landing Page</p></div></div>
+                  <div class="project-item"><img src="img/img-5.jpg" alt=""><div class="project-info"><p>Responsive Web Design</p></div></div>
               </div>
                 <button class="glider-prev">
                   <i class="fa fa-chevron-left"></i>
@@ -203,12 +202,24 @@
     </div>
       <div class="container-side-nav"></div>
         <div class="container-content" id="about-section">
-          <div class="row">
-            <h2 class="heading">About me</h2>
-            <p>I'm a Front-End Web Developer for over 3 years of experience. 
-              My range of work includes Responsive Design, some basic Javascript, and JQuery.
-              <br>
-              Nowadays, I'm spending most of my time learning and working on my personal projects.</p>
+          <div class="row flex">
+            <div class="about-info-holder">
+              <h2 class="heading">About me</h2>
+              <p>I'm a Front-End Web Developer for over 3 years of experience. 
+                My range of work includes Responsive Design, some basic Javascript, and JQuery.
+                <br>
+                Nowadays, I'm spending most of my time learning and working on my personal projects.</p>
+                <ul class="about-info">
+                  <li class="about-list"><span class="bold margin-right margin-top-15">Name: </span> <span class="margin-top-15">Abid Al-Wasi</span></li>
+                  <li class="about-list"><span class="bold margin-right margin-top-15">Email: </span> <span class="margin-top-15">abidalwasi@outlook.com</span></li>
+                  <li class="about-list"><span class="bold margin-right margin-top-15">Phone: </span> <span class="margin-top-15">+88 0131-0167-086</span></li>
+                  <li class="about-list"><span class="bold margin-right margin-top-15">Age: </span> <span class="margin-top-15">18</span></li>
+                  <li class="about-list"><span class="bold margin-right margin-top-15">Country: </span> <span class="margin-top-15"><a href="https://www.google.com/search?q=bangladesh" class="hyperlink">Bangladesh</a></span></li>
+                </ul>
+            </div>
+            <div class="about-pic-holder">
+              <img src="img/about.jpg" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -221,7 +232,8 @@
   <script src="js/script.js"></script>
   <script>
     new Glider(document.querySelector(".glider"), {
-      slidesToShow: 1,
+      slidesToShow: 2,
+      slidesToScroll: 2,
       draggable: true,
       arrows: {
         prev: ".glider-prev",
@@ -229,18 +241,19 @@
       },
       responsive: [
     {
-      breakpoint: 900,
+      breakpoint: 575,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3
       }
     },
     {
-      breakpoint: 575,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
+      // breakpoint: 575,
+      // settings: {
+      //   slidesToShow: 2,
+      //   slidesToScroll: 2
+      // },
+      
     }
   ]
     });
