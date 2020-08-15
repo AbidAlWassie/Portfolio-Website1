@@ -8,9 +8,9 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
 }
 
-/* html {
-  scroll-behavior: smooth;
-} */
+html {
+  /* scroll-behavior: smooth; */
+}
 
 body {
   margin: 0;
@@ -61,11 +61,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   overflow: hidden;
   height: 100%;
+  z-index: -10;
 }
 
 .row {
-  padding-top: 7em;
-  padding-bottom: 40px;
+  margin-top: 6em;
+  margin-bottom: 40px;
 }
 
 .full-height {
@@ -125,10 +126,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 74px;
 } */
 
-/* .active{
-  color: white;
-  background-color: red;
-} */
+
 
 .scrolled {
   position: fixed;
@@ -157,11 +155,21 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+.nav-item {
+  z-index: 10;
+}
+
 .nav-link {
   position: relative;
   bottom: 5px;
-  z-index: 5000;
-  padding: 0 20px;
+  z-index: 50;
+  margin: 0 20px;
+}
+
+.active-nav{
+  /* font-weight: bold; */
+  border-bottom: 2px solid #002fff;
+  /* text-decoration: underline; */
 }
 
 .navbar-brand {
@@ -338,7 +346,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-info-holder {
-  max-width: 400px;
+  max-width: 380px;
   margin-right: 20px;
 }
 
@@ -358,6 +366,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .margin-top-15 {
   margin: 15px 0 0 0;
+}
+
+.margin-top-25 {
+  margin: 25px 0 0 0;
+}
+
+.margin-top-35 {
+  margin: 35px 0 0 0;
 }
 
 .smscr-margin-10 {
@@ -658,6 +674,7 @@ h1, h2, h3, h4, h5, h6 {
 .heading {
   font-weight: 800;
   font-size: 30px;
+  margin-top: 0;
   margin-bottom: 30px;
   color: #3e64ff;
 }
@@ -732,6 +749,37 @@ h1, h2, h3, h4, h5, h6 {
 
 .project-item:last-child {
   margin: 0 0 0 0;
+}
+
+.btn-primary {
+  border-radius: 4px;
+  background-color: #3369ff;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  padding: 4.4px 2px 3.6px 8px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn-primary i {
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 0.9rem;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.btn-primary:hover i {
+  opacity: 1 !important;
+  padding-left: 9px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  right: 0;
 }
 
 
@@ -809,25 +857,25 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   background: transparent !important;
   animation-name: arrowDownAnimation;
-  animation-duration: 2000ms;
+  animation-duration: 1800ms;
   animation-iteration-count: infinite;
   transition: all;
 }
 
 @keyframes arrowDownAnimation {
   0% {
-    top: -10px; right: -5px;
+    top: -15px; right: -5px;
   }
   100% {
-    top: 35px; right: -5px;
+    top: 25px; right: -5px;
   }
 }
 
 
 .mouse-wheel {
-  height: 70px;
-  margin: 2px auto 0;
+  margin: 8px auto;
   display: block;
+  height: 70px;
   width: 30px;
   background: transparent;
   -webkit-border-radius: 50%;

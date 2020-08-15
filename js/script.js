@@ -1,6 +1,7 @@
 window.onload = function () {
 
   $(document).ready(function(){
+
     var scrollWindow = function() {
       $(window).scroll(function(){
         var $w = $(this),
@@ -48,41 +49,35 @@ window.onload = function () {
             sd.removeClass("sleep");
           }
         }
-        // if (st >= 1023) {
-        //   var deskLink = $(".desk-link");
-        //   if ( deskLink.hasClass("side-nav-active") ) {
-        //     deskLink.removeClass("side-nav-active")
+
+        // if (st >= 895) {
+        //   if (!navLink.hasClass("active-nav")) {
+        //     navLink.addClass("active-nav");
         //   } else {
-        //     deskLink.addClass("side-nav-active")
+        //     navLink.removeClass("active-nav");
         //   }
         // }
-        // console.log(st);
       });
     };
     scrollWindow();
 
-    $("a").on('click', function(event) {
+    var anchor = $(".scroll-link");
+    anchor.on('click', function(event) {
 
-      // Make sure this.hash has a value before overriding default behavior
       if (this.hash !== "") {
-        // Prevent default anchor click behavior
         event.preventDefault();
   
-        // Store hash
         var hash = this.hash;
   
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        var target = $(hash).offset().top-100;
         $('html, body').animate({
-          scrollTop: $(hash).offset().top-100
+          scrollTop: target
         }, 500, function(){
-     
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
+          // window.location.hash = hash;
         });
-      } // End if
+      }
     });
-  });
+    });
 
   // function smoothScroll(target, duration) {
   //   var target = document.querySelector(target);
@@ -192,7 +187,7 @@ window.onload = function () {
 
     function onToggle() {
       console.log(navbar);
-      if (navbarNav.style.top == '10px') {
+      if (navbarNav.style.top === '10px') {
         navbarNav.style.top = '-600px';
         navbar.classList.remove('nav-expand');
       } else {
@@ -202,11 +197,4 @@ window.onload = function () {
     }
     
   }
-
-  
-
-
-
-  
-
 }

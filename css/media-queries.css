@@ -61,11 +61,11 @@
     /* background: rgb(12, 23, 46); */
     margin: 0;
     transition: all 300ms ease-in-out;
-    z-index: -100;
+    /* z-index: -100; */
   }
 
   .nav-link {
-    color: rgb(41, 41, 41)91);
+    color: rgb(41, 41, 41);
     line-height: 45px;
   }
 
@@ -135,6 +135,19 @@
 }
 
 @media (max-width: 770px) {
+  .flex {
+    flex-direction: column;
+  }
+  .about-info-holder {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .about-pic-holder {
+    display: flex;
+    min-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+  }
   .skills-container-circles {
     display: grid;
     grid-template-columns: 0.7fr;
@@ -179,8 +192,8 @@
 } */
 
 @media (min-width: 576px) {
-  /* .container {
-    max-width: 560px; }  */
+  .container {
+    max-width: 500px; } 
 }
 
 /* @media (min-width: 714px) {
@@ -221,7 +234,8 @@
   }
 
   .container-content {
-    max-width: 100%;
+    max-width: 97%;
+    margin: 0 auto;
   }
 }
 
