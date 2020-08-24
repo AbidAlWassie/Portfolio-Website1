@@ -791,6 +791,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0 0;
 }
 
+.project-item:hover a{
+  text-decoration: underline;
+  color: #3700ff;
+}
+
 .btn-primary {
   border-radius: 4px;
   background-color: #3369ff;
