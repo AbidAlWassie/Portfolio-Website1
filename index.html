@@ -20,7 +20,7 @@
         <li class="nav-item"><a href="#portfolio-section" class="nav-link scroll-link" draggable="false">Portfolio</a></li>
         <li class="nav-item"><a href="#skills-section" class="nav-link scroll-link" draggable="false">Skills</a></li>
         <li class="nav-item"><a href="#about-section" class="nav-link scroll-link" draggable="false">About</a></li>
-        <li class="nav-item"><a href="#section5" class="nav-link scroll-link" draggable="false">Services</a></li>
+        <li class="nav-item"><a href="#services-section" class="nav-link scroll-link" draggable="false">Services</a></li>
         <li class="nav-item"><a href="#section7" class="nav-link scroll-link" draggable="false">Contact</a></li>
       </ul>
       <div class="menu-btn" id="menuBtn">
@@ -91,7 +91,7 @@
               <a href="javascript:void(0)" class="heading-link smscr-margin-10"><i class="fa fa-arrow-right"></i> View all</a>
             </div>
             <div class="glider-contain">
-              <div class="glider">
+              <div class="projectGlider">
                   <div class="project-item"><a href="https://goofy-yonath-9b1192.netlify.app/">
                     <img src="img/project1.png" alt=""><div class="project-info"><p>Portfolio Website</p></div>
                   </a></div>
@@ -269,7 +269,9 @@
         <div class="container-content" id="services-section">
           <div class="services-info-holder">
             <h2 class="heading">Services</h2>
-            <div class="skills-container-circles">
+
+            <div class="service-cards-container">
+
               <div class="card-service">
                 <img src="svg/responsive-design.svg" class="service-icon" alt="">
                 <h3>Responsive Web Design</h3>
@@ -293,10 +295,89 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis corporis eveniet nihil tempora rem!
                 </p>
               </div>
+
+              <div class="card-service">
+                <img src="svg/responsive-design.svg" class="service-icon" alt="">
+                <h3>Responsive Web Design</h3>
+                <p class="service-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis corporis eveniet nihil tempora rem!
+                </p>
+              </div>
+              
+              <div class="card-service">
+                <img src="svg/responsive-design.svg" class="service-icon" alt="">
+                <h3>Responsive Web Design</h3>
+                <p class="service-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis corporis eveniet nihil tempora rem!
+                </p>
+              </div>
   
+              <div class="card-service">
+                <img src="svg/responsive-design.svg" class="service-icon" alt="">
+                <h3>Responsive Web Design</h3>
+                <p class="service-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis corporis eveniet nihil tempora rem!
+                </p>
+              </div>
+              
             </div>
           </div>
         </div>
+
+        <div class="container-side-nav"></div>
+        <div class="container-content" id="testimonial-section">
+          <div class="testimonial-info-holder">
+            <div class="vertical-margin-50">
+              <h2 class="heading">Testes</h2>
+              <div class="glider-contain">
+                <div class="testimonialGlider">
+
+                      <div class="testimonial-item text-center row aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                        <span class="quote">
+                          <i class="fa fa-quote-right"></i>
+                        </span>
+                        <blockquote>
+                          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                          <span>Athan Smith, via <a href="#" class="review-platform"></a>
+                            <img src="svg/twitter.svg" class="icon-review-platform">
+                          </span>
+                        </blockquote>
+                      </div>
+
+                      <div class="testimonial-item text-center row aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                        <span class="quote">
+                          <i class="fa fa-quote-right"></i>
+                        </span>
+                        <blockquote>
+                          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                          <span>Ron Davis, via <a href="#" class="review-platform"></a>
+                            <img src="svg/facebook.svg" class="icon-review-platform"></span>
+                        </blockquote>
+                      </div>
+
+                      <div class="testimonial-item text-center row aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                        <span class="quote">
+                          <i class="fa fa-quote-right"></i>
+                        </span>
+                        <blockquote>
+                          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                          <span>Jane Williams, via <a href="#" class="review-platform"></a>
+                            <img src="svg/linkedin.svg" class="icon-review-platform">
+                        </span>
+                        </blockquote>
+                      </div>
+                </div>
+                  <button class="glider-prev glider-prev2">
+                    <i class="fa fa-chevron-left"></i>
+                  </button>
+                  <button class="glider-next glider-next2">
+                    <i class="fa fa-chevron-right"></i>
+                  </button>
+                  <div id="dots" class="glider-dots"></div>
+              </div>
+            </div>
+        </div>
+      </div>
 
       </div>
     </div>
@@ -307,7 +388,7 @@
   <script src="js/glider.min.js"></script>
   <script>
     
-    new Glider(document.querySelector(".glider"), {
+    new Glider(document.querySelector(".projectGlider"), {
       slidesToShow: 2,
       slidesToScroll: 2,
       draggable: true,
@@ -332,6 +413,34 @@
             
           }
         ]
+      });
+
+      new Glider(document.querySelector(".testimonialGlider"), {
+        slidesToShow: 1,
+        dots: "#dots",
+        slidesToScroll: 1,
+        draggable: true,
+        arrows: {
+          prev: ".glider-prev2",
+          next: ".glider-next2"
+        },
+        responsive: [
+          {
+            breakpoint: 575,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            // breakpoint: 575,
+            // settings: {
+              //   slidesToShow: 2,
+              //   slidesToScroll: 2
+              // },
+              
+            }
+          ]
       });
 
       let counter = 0;

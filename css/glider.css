@@ -56,17 +56,18 @@
   font-weight: 300;
   text-decoration: none;
   left: 0;
-  border: 1px solid rgb(180, 180, 180);
   top: 29%;
   left: 3.4px;
   cursor: pointer;
   border-radius: 50%;
   padding: 10px 11px 10px 11px;
-  color: #fff;
+  border: 1px solid rgb(196, 196, 196);
+  color: rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.678);
   opacity: 1;
   line-height: 1;
-  transition: opacity .5s cubic-bezier(.17,.67,.83,.67),
-  color .5s cubic-bezier(.17,.67,.83,.67);
+  transition: opacity .3s cubic-bezier(.17,.67,.83,.67),
+  color .2s cubic-bezier(.17,.67,.83,.67);
 }
 .glider-prev:hover,
 .glider-next:hover{

@@ -322,11 +322,27 @@ h1, h2, h3, h4, h5, h6 {
   width: 35px;
 }
 
+.services-info-holder {
+  display: grid;
+}
+
 .card-service {
   text-align: center;
-  height: 200px;
-  width: 30%;
+  height: 98%;
+  width: 98%;
   background: rgb(231, 231, 231);
+  margin: auto 0;
+}
+
+.service-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+}
+
+.icon-review-platform {
+  width: 15px;
 }
 
 .half {
