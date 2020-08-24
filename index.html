@@ -49,7 +49,7 @@
             <span class="subheading">Hey, I am</span>
             <h1>Abid Al-Wasi</h1>
             <h2 class="text-center">I'm a Front-end Web Developer and
-            <br> an ex-Muslim Atheist</h2>
+            <br> a secular Atheist</h2>
           </div>
         </div>
     </div>
@@ -140,6 +140,16 @@
                     </div>
                   </div>
                 </div>
+                <div class="half text-center">
+                  <div class="skills-time-info border-right">
+                    <div class="text-large text-bold">5%</div>
+                    <div class="text-small text-grey">Last week</div>
+                  </div>
+                  <div class="skills-time-info second">
+                    <div class="text-large text-bold">85%</div>
+                    <div class="text-small text-grey">Long ago</div>
+                  </div>
+                </div>
               </div>
   
               <div class="card-skill responsive-margin">
@@ -152,6 +162,16 @@
                     </div>
                   </div>
                 </div>
+                <div class="half text-center">
+                  <div class="skills-time-info border-right">
+                    <div class="text-large text-bold">10%</div>
+                    <div class="text-small text-grey">Last month</div>
+                  </div>
+                  <div class="skills-time-info second">
+                    <div class="text-large text-bold">70%</div>
+                    <div class="text-small text-grey">Last year</div>
+                  </div>
+                </div>
               </div>
   
               <div class="card-skill responsive-margin">
@@ -162,6 +182,16 @@
                     <div class="skill-percentage-number">
                       <!-- <p>60<span class="percentage-sign"><sup>%</sub></span></p> -->
                     </div>
+                  </div>
+                </div>
+                <div class="half text-center">
+                  <div class="skills-time-info border-right">
+                    <div class="text-large text-bold">20%</div>
+                    <div class="text-small text-grey">Last 5 months</div>
+                  </div>
+                  <div class="skills-time-info second">
+                    <div class="text-large text-bold">40%</div>
+                    <div class="text-small text-grey">2 years</div>
                   </div>
                 </div>
               </div>
@@ -234,6 +264,40 @@
             </div>
           </div>
         </div>
+
+        <div class="container-side-nav"></div>
+        <div class="container-content" id="services-section">
+          <div class="services-info-holder">
+            <h2 class="heading">Services</h2>
+            <div class="skills-container-circles">
+              <div class="card-service">
+                <img src="svg/responsive-design.svg" class="service-icon" alt="">
+                <h3>Responsive Web Design</h3>
+                <p class="service-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis corporis eveniet nihil tempora rem!
+                </p>
+              </div>
+              
+              <div class="card-service">
+                <img src="svg/responsive-design.svg" class="service-icon" alt="">
+                <h3>Responsive Web Design</h3>
+                <p class="service-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis corporis eveniet nihil tempora rem!
+                </p>
+              </div>
+  
+              <div class="card-service">
+                <img src="svg/responsive-design.svg" class="service-icon" alt="">
+                <h3>Responsive Web Design</h3>
+                <p class="service-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis corporis eveniet nihil tempora rem!
+                </p>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -269,26 +333,33 @@
           }
         ]
       });
+
+      let counter = 0;
+
       window.addEventListener("scroll", function() {
         const scrolled = window.scrollY;
         // console.log(scrolled);
         var scrollbarLocation = $(this).scrollTop();
-        var scrollLink = $(".scroll-link");
+        var scrollLink = $(".nav-link");
     
       scrollLink.each(function() {
       
-      var sectionOffset = $(this.hash).offset().top - 120;
-      console.log(sectionOffset);
+      var sectionOffset = $(this.hash).offset().top - 220;
+      console.log(scrollLink.length);
       if ( sectionOffset <= scrollbarLocation ) {
-          $(this).addClass('active-nav');
-          // $(this).siblings().removeClass('active-nav');
-          
-        } else {
+        for (i = 0; i <= scrollLink.length; i++) {
+          counter++;
+        }
+        console.log(counter);
+        $(this).addClass('active-nav');
+        // $(this).siblings().removeClass('active-nav');
+      } 
+      else {
+        $(this).removeClass('active-nav');
           // if ($(this).hasClass('active-nav')) {
-            $(this).removeClass('active-nav');
           // }
         }
-    })
+    });
       });
   </script>
   <script src="js/script.js"></script>

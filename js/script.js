@@ -50,11 +50,12 @@ window.onload = function () {
           }
         }
 
+        // console.log(navLink[0]);
         // if (st >= 895) {
-        //   if (!navLink.hasClass("active-nav")) {
-        //     navLink.addClass("active-nav");
+        //   if (!navLink[0].hasClass("active-nav")) {
+        //     navLink[0].addClass("active-nav");
         //   } else {
-        //     navLink.removeClass("active-nav");
+        //     navLink[0].removeClass("active-nav");
         //   }
         // }
       });

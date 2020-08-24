@@ -53,7 +53,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-
+  /* margin: 0 auto 0 auto; */
 }
 
 .container {
@@ -312,12 +312,52 @@ h1, h2, h3, h4, h5, h6 {
 .card-skill {
   text-align: center;
   border-radius: 4px;
-  width: 200px;
-  height: 300px;
+  height: 320px;
   box-shadow: 0px 0.2px 10px rgba(41, 41, 41, 0.253);
-  width: 28%;
-  /* margin-right: 25px;
-  margin-left: 25px; */
+  width: 30%;
+}
+
+.service-icon {
+  height: 35px;
+  width: 35px;
+}
+
+.card-service {
+  text-align: center;
+  height: 200px;
+  width: 30%;
+  background: rgb(231, 231, 231);
+}
+
+.half {
+  display: flex;
+  justify-content: center;
+}
+
+.skills-time-info {
+  line-height: 1.7em;
+  padding: 0 10px 0 10px;
+  margin: 25px 0 4px 0;
+}
+
+.text-large {
+  font-size: 1.3rem;
+}
+
+.text-small {
+  font-size: 0.9rem;
+}
+
+.text-grey {
+  color: #999999;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.border-right {
+  border-right: 1px solid #dee2e6 !important;
 }
 
 .skill-name {
@@ -713,7 +753,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .portfolio-nav-fixed {
-  /* left: 0; */
+  position: fixed;
 }
 
 .side-nav-active {
@@ -898,3 +938,4 @@ h1, h2, h3, h4, h5, h6 {
   /* height: 100%;
   width: 100%; */
 }
+

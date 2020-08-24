@@ -142,6 +142,13 @@
     width: 100%;
     margin: 0 auto;
   }
+
+  .services-info-holder {
+    margin: 0 auto;
+    max-width: 380px;
+    /* width: 100%; */
+  /* margin-right: 20px; */
+  }
   .about-pic-holder {
     display: flex;
     min-width: 100%;
@@ -150,9 +157,9 @@
   }
   .skills-container-circles {
     display: grid;
-    grid-template-columns: 0.7fr;
+    grid-template-columns: 1fr;
     position: relative;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .bar-container {
@@ -161,13 +168,16 @@
   }
 
   .card-skill {
-    width: 100%;
+    width: 390px;
   }
 
-  /* .smscr-margin-10 {
-    margin-left: 10px;
-    margin-right: 10px;
-  } */
+  .card-service {
+    width: 390px;
+  }
+
+  .skills-time-info {
+    padding: 0 60px 0 60px;
+  }
 
   .lgscr-margin-10 {
     margin: 0;
@@ -234,8 +244,20 @@
   }
 
   .container-content {
-    max-width: 97%;
+    min-width: 90%;
     margin: 0 auto;
+  }
+
+  #skills-section {
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+  }
+}
+
+@media (max-width: 1110px) {
+  .container-side-nav {
+    margin-left: 40px;
   }
 }
 
