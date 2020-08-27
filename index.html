@@ -7,8 +7,10 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/glider.css">
   <link rel="stylesheet" href="css/media-queries.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <script src="js/aos.js"></script>
 </head>
 <body>
   <nav class="navbar">
@@ -86,26 +88,26 @@
         </div>
       </div>
           <div class="container-content">
-            <div class="heading-container">
+            <div class="heading-container" data-aos="fade-up" data-aos-delay="100">
               <h2 class="heading smscr-margin-10" id="portfolio-section">My Work</h2>
               <a href="javascript:void(0)" class="heading-link smscr-margin-10"><i class="fa fa-arrow-right"></i> View all</a>
             </div>
             <div class="glider-contain">
               <div class="projectGlider">
-                  <div class="project-item"><a href="https://goofy-yonath-9b1192.netlify.app/">
+                  <div class="project-item" data-aos="fade-up" data-aos-delay="200"><a href="https://goofy-yonath-9b1192.netlify.app/">
                     <img src="img/project1.png" alt=""><div class="project-info"><p>Portfolio Website</p></div>
                   </a></div>
 
-                  <div class="project-item"><a href="https://practical-yonath-1980fb.netlify.app/">
+                  <div class="project-item" data-aos="fade-up" data-aos-delay="300"><a href="https://practical-yonath-1980fb.netlify.app/">
                     <img src="img/project2.jpg" alt=""><div class="project-info"><p>Responsive Web Design</p></div></a></div>
 
-                  <div class="project-item"><a href="https://goofy-yonath-9b1192.netlify.app/">
+                  <div class="project-item" data-aos="fade-up" data-aos-delay="400"><a href="https://goofy-yonath-9b1192.netlify.app/">
                     <img src="img/img-3.jpg" alt=""><div class="project-info"><p>Landing Page</p></div></a></div>
 
-                  <div class="project-item"><a href="https://goofy-yonath-9b1192.netlify.app/">
+                  <div class="project-item" data-aos="fade-up" data-aos-delay="500"><a href="https://goofy-yonath-9b1192.netlify.app/">
                     <img src="img/img-4.jpg" alt=""><div class="project-info"><p>Landing Page</p></div></a></div>
 
-                  <div class="project-item"><a href="https://practical-yonath-1980fb.netlify.app/">
+                  <div class="project-item" data-aos="fade-up" data-aos-delay="600"><a href="https://practical-yonath-1980fb.netlify.app/">
                     <img src="img/img-5.jpg" alt=""><div class="project-info"><p>Responsive Web Design</p></div></a>
                   </div>
               </div>
@@ -127,17 +129,14 @@
         <div class="container-content" id="skills-section">
           <div class="page-2">
 
-            <h2 class="heading">Skills</h2>
+            <h2 class="heading" data-aos="fade-up" data-aos-delay="100">Skills</h2>
 
             <div id="skillsSect" class="skills-container-circles">
-              <div class="card-skill responsive-margin">
+              <div class="card-skill responsive-margin" data-aos="fade-up" data-aos-delay="200">
                 <div class="skill-circle-container">
                   <h2 class="skill-name">HTML</h2>
                   <div class="skill-percentage-circle">
-                    <svg class="svg-skill" data-name="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3309 3309"><defs><style>.cls-1,.cls-2{fill:none;stroke-miterlimit:10;stroke-width:150px;}.cls-1{stroke:#e5e5e5;}.cls-2{stroke:#3e64ff;}.cls-3{font-size:799.39px;font-family:Arial-BoldMT, Arial;font-weight:700;}.cls-4{font-size:506.83px;font-family:ArialMT, Arial;}</style></defs><title>progress-bar-circle-1</title><circle class="cls-1" cx="1654.5" cy="1654.5" r="1579.5"/><path class="cls-2" d="M2499.5,920C3371.83,920,4079,1627.17,4079,2499.5S3371.83,4079,2499.5,4079,920,3371.83,920,2499.5c0-545.21,276.24-1025.9,696.39-1309.75" transform="translate(-845 -845)"/><text class="cls-3" transform="translate(1075.01 1961.06)">90</text><text class="cls-4" transform="translate(1918.62 1634.94) scale(0.92 1)">%</text></svg>
-                    <div class="skill-percentage-number">
-                      <!-- <p>90<span class="percentage-sign"><sup>%</sub></span></p> -->
-                    </div>
+                    <div id="circle1" class="circles"></div>
                   </div>
                 </div>
                 <div class="half text-center">
@@ -152,14 +151,11 @@
                 </div>
               </div>
   
-              <div class="card-skill responsive-margin">
+              <div class="card-skill responsive-margin" data-aos="fade-up" data-aos-delay="300">
                 <div class="skill-circle-container">
                   <h2 class="skill-name">CSS</h2>
                   <div class="skill-percentage-circle">
-                    <svg class="svg-skill" data-name="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3309 3309"><defs><style>.cls-1,.cls-2{fill:none;stroke-miterlimit:10;stroke-width:150px;}.cls-1{stroke:#e5e5e5;}.cls-2{stroke:#3e64ff;}.cls-3{font-size:799.39px;font-family:Arial-BoldMT, Arial;font-weight:700;}.cls-4{font-size:506.83px;font-family:ArialMT, Arial;}</style></defs><title>progress-bar-circle-2</title><circle class="cls-1" cx="1654.5" cy="1654.5" r="1579.5"/><path class="cls-2" d="M2499.5,920C3371.83,920,4079,1627.17,4079,2499.5S3371.83,4079,2499.5,4079,920,3371.83,920,2499.5c0-193.35,34.74-378.59,98.32-549.81" transform="translate(-845 -845)"/><text class="cls-3" transform="translate(1075.01 1961.06)">80</text><text class="cls-4" transform="translate(1918.62 1634.94) scale(0.92 1)">%</text></svg>
-                    <div class="skill-percentage-number">
-                      <!-- <p>80<span class="percentage-sign"><sup>%</sub></span></p> -->
-                    </div>
+                    <div id="circle2" class="circles"></div>
                   </div>
                 </div>
                 <div class="half text-center">
@@ -174,14 +170,11 @@
                 </div>
               </div>
   
-              <div class="card-skill responsive-margin">
+              <div class="card-skill responsive-margin" data-aos="fade-up" data-aos-delay="400">
                 <div class="skill-circle-container">
                   <h2 class="skill-name">JavaScript</h2>
                   <div class="skill-percentage-circle">
-                    <svg class="svg-skill" data-name="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3309 3309"><defs><style>.cls-1,.cls-2{fill:none;stroke-miterlimit:10;stroke-width:150px;}.cls-1{stroke:#e5e5e5;}.cls-2{stroke:#3e64ff;}.cls-3{font-size:799.39px;font-family:Arial-BoldMT, Arial;font-weight:700;}.cls-4{font-size:506.83px;font-family:ArialMT, Arial;}</style></defs><title>progress-bar-circle-1</title><circle class="cls-1" cx="1654.5" cy="1654.5" r="1579.5"/><path class="cls-2" d="M2499.5,920C3371.83,920,4079,1627.17,4079,2499.5S3371.83,4079,2499.5,4079c-365.94,0-702.82-124.45-970.62-333.33" transform="translate(-845 -845)"/><text class="cls-3" transform="translate(1075.01 1961.06)">60</text><text class="cls-4" transform="translate(1918.62 1634.94) scale(0.92 1)">%</text></svg>
-                    <div class="skill-percentage-number">
-                      <!-- <p>60<span class="percentage-sign"><sup>%</sub></span></p> -->
-                    </div>
+                    <div id="circle3" class="circles"></div>
                   </div>
                 </div>
                 <div class="half text-center">
@@ -199,7 +192,7 @@
 
             <div class="skills-container-bars vertical-margin-50 margin-bottom-b2">
               <div class="bar-container">
-                <div class="skill-info">
+                <div class="skill-info" data-aos="fade-up" data-aos-delay="100">
                   <div class="skill-item progress-bar-name">
                     <h4>UX/UI Design</h4>
                   </div>
@@ -208,7 +201,7 @@
                   </div>
                 <div class="progress-bar" id="bar1"></div>
                 </div>
-                <div class="skill-info">
+                <div class="skill-info" data-aos="fade-up" data-aos-delay="200">
                   <div class="skill-item progress-bar-name">
                     <h4>Responsive Design</h4>
                   </div>
@@ -217,7 +210,7 @@
                   </div>
                   <div class="progress-bar" id="bar2" ></div>
                 </div>
-                <div class="skill-info">
+                <div class="skill-info" data-aos="fade-up" data-aos-delay="300">
                   <div class="skill-item progress-bar-name">
                     <h4>Photoshop</h4>
                   </div>
@@ -226,7 +219,7 @@
                   </div>
                   <div class="progress-bar" id="bar3" ></div>
                 </div>
-                <div class="skill-info">
+                <div class="skill-info" data-aos="fade-up" data-aos-delay="400">
                   <div class="skill-item progress-bar-name">
                     <h4>Illustrator</h4>
                   </div>
@@ -245,21 +238,23 @@
         <div class="container-content" id="about-section">
           <div class="row flex">
             <div class="about-info-holder">
-              <h2 class="heading">About me</h2>
-              <p>I'm a Front-End Web Developer for over 3 years of experience. 
-                My range of work includes Responsive Design, some basic Javascript, and JQuery.
-                <br>
-                Nowadays, I'm spending most of my time learning and working on my personal projects.</p>
-                <ul class="about-info">
-                  <li class="about-list"><span class="bold margin-right margin-top-15">Name: </span> <span class="margin-top-15">Abid Al-Wasi</span></li>
-                  <li class="about-list"><span class="bold margin-right margin-top-15">Email: </span> <span class="margin-top-15">abidalwasi@outlook.com</span></li>
-                  <li class="about-list"><span class="bold margin-right margin-top-15">Phone: </span> <span class="margin-top-15">+88 0131-0167-086</span></li>
-                  <li class="about-list"><span class="bold margin-right margin-top-15">Age: </span> <span class="margin-top-15">18</span></li>
-                  <li class="about-list"><span class="bold margin-right margin-top-15">Country: </span> <span class="margin-top-15"><a href="https://www.google.com/search?q=bangladesh" class="hyperlink">Bangladesh</a></span></li>
-                  <li class="about-list margin-top-25"><button class="btn-primary"><a href="javascript:void(0)" class="btn-primary">Read more <i class="fas fa-arrow-right btn-icon"></i></a></button></li>
-                </ul>
+              <h2 class="heading" data-aos="fade-up" data-aos-delay="100">About me</h2>
+              <div data-aos="fade-up" data-aos-delay="100">
+                <p>I'm a Front-End Web Developer for over 3 years of experience. 
+                  My range of work includes Responsive Design, some basic Javascript, and JQuery.
+                  <br>
+                  Nowadays, I'm spending most of my time learning and working on my personal projects.</p>
+                  <ul class="about-info">
+                    <li class="about-list"><span class="bold margin-right margin-top-15">Name: </span> <span class="margin-top-15">Abid Al-Wasi</span></li>
+                    <li class="about-list"><span class="bold margin-right margin-top-15">Email: </span> <span class="margin-top-15">abidalwasi@outlook.com</span></li>
+                    <li class="about-list"><span class="bold margin-right margin-top-15">Phone: </span> <span class="margin-top-15">+88 0131-0167-086</span></li>
+                    <li class="about-list"><span class="bold margin-right margin-top-15">Age: </span> <span class="margin-top-15">18</span></li>
+                    <li class="about-list"><span class="bold margin-right margin-top-15">Country: </span> <span class="margin-top-15"><a href="https://www.google.com/search?q=bangladesh" class="hyperlink">Bangladesh</a></span></li>
+                    <li class="about-list margin-top-25"><button class="btn-primary"><a href="javascript:void(0)" class="btn-primary">Read more <i class="fas fa-arrow-right btn-icon"></i></a></button></li>
+                  </ul>
+              </div>
             </div>
-            <div class="about-pic-holder">
+            <div class="about-pic-holder" data-aos="fade-up" data-aos-delay="300">
               <img src="img/about.jpg" alt="chris hemsworth">
             </div>
           </div>
@@ -268,11 +263,11 @@
         <div class="container-side-nav"></div>
         <div class="container-content" id="services-section">
           <div class="services-info-holder">
-            <h2 class="heading">Services</h2>
+            <h2 class="heading" data-aos="fade-up" data-aos-delay="100">Services</h2>
 
-            <div class="service-cards-container">
+            <div class="service-cards-container" data-aos="fade-up">
 
-              <div class="card-service">
+              <div class="card-service" data-aos="fade-up" data-aos-delay="200">
                 <img src="svg/responsive-design.svg" class="service-icon" alt="">
                 <h3>Responsive Web Design</h3>
                 <p class="service-description">
@@ -280,7 +275,7 @@
                 </p>
               </div>
               
-              <div class="card-service">
+              <div class="card-service" data-aos="fade-up" data-aos-delay="300">
                 <img src="svg/responsive-design.svg" class="service-icon" alt="">
                 <h3>Responsive Web Design</h3>
                 <p class="service-description">
@@ -288,7 +283,7 @@
                 </p>
               </div>
   
-              <div class="card-service">
+              <div class="card-service" data-aos="fade-up" data-aos-delay="400">
                 <img src="svg/responsive-design.svg" class="service-icon" alt="">
                 <h3>Responsive Web Design</h3>
                 <p class="service-description">
@@ -296,7 +291,7 @@
                 </p>
               </div>
 
-              <div class="card-service">
+              <div class="card-service" data-aos="fade-up" data-aos-delay="500">
                 <img src="svg/responsive-design.svg" class="service-icon" alt="">
                 <h3>Responsive Web Design</h3>
                 <p class="service-description">
@@ -304,7 +299,7 @@
                 </p>
               </div>
               
-              <div class="card-service">
+              <div class="card-service" data-aos="fade-up" data-aos-delay="600">
                 <img src="svg/responsive-design.svg" class="service-icon" alt="">
                 <h3>Responsive Web Design</h3>
                 <p class="service-description">
@@ -312,7 +307,7 @@
                 </p>
               </div>
   
-              <div class="card-service">
+              <div class="card-service" data-aos="fade-up" data-aos-delay="700">
                 <img src="svg/responsive-design.svg" class="service-icon" alt="">
                 <h3>Responsive Web Design</h3>
                 <p class="service-description">
@@ -328,51 +323,54 @@
         <div class="container-content" id="testimonial-section">
           <div class="testimonial-info-holder">
             <div class="vertical-margin-50">
-              <h2 class="heading">Testes</h2>
-              <div class="glider-contain">
+              <h2 class="heading" data-aos="fade-up" data-aos-delay="100">Testes</h2>
+              <div class="glider-contain" data-aos="fade-up" data-aos-delay="200">
                 <div class="testimonialGlider">
 
-                      <div class="testimonial-item text-center row aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                      <div class="testimonial-item text-center">
                         <span class="quote">
                           <i class="fa fa-quote-right"></i>
                         </span>
-                        <blockquote>
-                          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <blockquote class="review-container">
+                          <p class="horizontal-margin-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
                           <span>Athan Smith, via <a href="#" class="review-platform"></a>
                             <img src="svg/twitter.svg" class="icon-review-platform">
                           </span>
                         </blockquote>
                       </div>
 
-                      <div class="testimonial-item text-center row aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                      <div class="testimonial-item text-center">
                         <span class="quote">
                           <i class="fa fa-quote-right"></i>
                         </span>
-                        <blockquote>
-                          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <blockquote class="review-container">
+                          <p class="horizontal-margin-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
                           <span>Ron Davis, via <a href="#" class="review-platform"></a>
                             <img src="svg/facebook.svg" class="icon-review-platform"></span>
                         </blockquote>
                       </div>
 
-                      <div class="testimonial-item text-center row aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                      <div class="testimonial-item text-center">
                         <span class="quote">
                           <i class="fa fa-quote-right"></i>
                         </span>
-                        <blockquote>
-                          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <blockquote class="review-container">
+                          <p class="horizontal-margin-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
                           <span>Jane Williams, via <a href="#" class="review-platform"></a>
                             <img src="svg/linkedin.svg" class="icon-review-platform">
                         </span>
                         </blockquote>
                       </div>
                 </div>
+
+                <div class="review-nav">
                   <button class="glider-prev glider-prev2">
                     <i class="fa fa-chevron-left"></i>
                   </button>
                   <button class="glider-next glider-next2">
                     <i class="fa fa-chevron-right"></i>
                   </button>
+                </div>
                   <div id="dots" class="glider-dots"></div>
               </div>
             </div>
@@ -386,8 +384,105 @@
   src="js/jquery-3.5.1.min.js"></script>
   <!-- <script src="js/bootstrap.min.js"></script> -->
   <script src="js/glider.min.js"></script>
+  <script src="js/progressbar.min.js"></script>
+
+
   <script>
     
+  var bar1 = new ProgressBar.Circle(circle1, {
+  color: '#2b2b2b',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 5,
+  trailWidth: 5,
+  easing: 'easeInOut',
+  duration: 2000,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#3366ff', width: 5 },
+  to: { color: '#3366ff', width: 5 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
+    }
+
+  }
+});
+bar1.text.style.fontFamily = '"Open sans", Helvetica, sans-serif';
+bar1.text.style.fontSize = '2rem';
+
+bar1.animate(0.90);
+
+var bar2 = new ProgressBar.Circle(circle2, {
+  color: '#2b2b2b',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 5,
+  trailWidth: 5,
+  easing: 'easeInOut',
+  duration: 2000,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#3366ff', width: 5 },
+  to: { color: '#3366ff', width: 5 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
+    }
+
+  }
+});
+bar2.text.style.fontFamily = '"Open sans", Helvetica, sans-serif';
+bar2.text.style.fontSize = '2rem';
+bar2.animate(0.85);
+
+var bar3 = new ProgressBar.Circle(circle3, {
+  color: '#2b2b2b',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 5,
+  trailWidth: 5,
+  easing: 'easeInOut',
+  duration: 2000,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#3366ff', width: 5 },
+  to: { color: '#3366ff', width: 5 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
+    }
+
+  }
+});
+bar3.text.style.fontFamily = '"Open sans", Helvetica, sans-serif';
+bar3.text.style.fontSize = '2rem';
+bar3.animate(0.6);
+
     new Glider(document.querySelector(".projectGlider"), {
       slidesToShow: 2,
       slidesToScroll: 2,
@@ -456,10 +551,11 @@
       var sectionOffset = $(this.hash).offset().top - 220;
       console.log(scrollLink.length);
       if ( sectionOffset <= scrollbarLocation ) {
-        for (i = 0; i <= scrollLink.length; i++) {
-          counter++;
-        }
-        console.log(counter);
+        // for (i = 0; i <= scrollLink.length; i++) {
+        //   counter++;
+        // }
+        // console.log(counter);
+        $(this).siblings().removeClass('active-nav');
         $(this).addClass('active-nav');
         // $(this).siblings().removeClass('active-nav');
       } 
@@ -470,6 +566,7 @@
         }
     });
       });
+      AOS.init({offset: 80, duration: 300});
   </script>
   <script src="js/script.js"></script>
 </body>
