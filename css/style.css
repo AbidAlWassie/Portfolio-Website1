@@ -314,7 +314,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   height: 320px;
   box-shadow: 0px 0.2px 10px rgba(41, 41, 41, 0.253);
-  width: 30%;
+  width: 28%;
+  margin-right: 29px;
 }
 
 .service-icon {
@@ -433,18 +434,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 
-.about-info-holder {
-  max-width: 380px;
-  margin-right: 20px;
-}
 
-.about-info {
-  max-width: 280px;
-}
-
-.about-list {
-  display: flex;
-}
 
 .margin-right {
   /* margin: 10px 0; */
@@ -640,7 +630,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .progress-bar {
   position: relative;
-  width: 360px;
+  width: 450px;
   height: 0.6em;
   background: rgb(235, 235, 235);
   border-radius: 0.1em;
@@ -768,8 +758,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-2 {
-  margin-right: 5px;
-  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .nav-mobile {
@@ -935,6 +927,24 @@ h1, h2, h3, h4, h5, h6 {
   background: #e7eefc;
   z-index: 1;
 
+}
+
+.about-info {
+  width: 300px;
+}
+
+.about-list {
+  width: 300px;
+  padding: 10px 0;
+  /* float: left; */
+  /* position: relative; */
+  /* line-height: 40px; */
+}
+
+.left {
+  position: relative;
+  top: -49px;
+  left: 80px;
 }
 
 /* .mouse-wheel {

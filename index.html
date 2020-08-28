@@ -18,7 +18,7 @@
       <a class="navbar-brand" href="index.html"><span class="firstLetter">A</span><span class="otherLetters" draggable="false">bid</span>
       </a>
       <ul class="navbar-nav nav-items">
-        <li class="nav-item"><a href="#home" class="nav-link scroll-link active-nav" draggable="false">Home</a></li>
+        <li class="nav-item"><a href="#home" class="nav-link scroll-link" draggable="false">Home</a></li>
         <li class="nav-item"><a href="#portfolio-section" class="nav-link scroll-link" draggable="false">Portfolio</a></li>
         <li class="nav-item"><a href="#skills-section" class="nav-link scroll-link" draggable="false">Skills</a></li>
         <li class="nav-item"><a href="#about-section" class="nav-link scroll-link" draggable="false">About</a></li>
@@ -73,20 +73,7 @@
   
   <div class="container">
     <div class="row">
-      <div class="container-side-nav">
-        <div class="portfolio-section1 .portfolio-nav-fixed">
-          <div class="nav-desktop">
-            <ul>
-              <!-- <li><a href="javascript:void(0)" class="nav-desktop-items">Projects</a></li> -->
-              <li><a href="javascript:void(0)" class="nav-desktop-items desk-link side-nav-active">Portfolio</a></li>
-              <li><a href="javascript:void(0)" class="nav-desktop-items desk-link">Skills</a></li>
-              <li><a href="javascript:void(0)" class="nav-desktop-items desk-link">About</a></li>
-              <li><a href="javascript:void(0)" class="nav-desktop-items desk-link">Services</a></li>
-              <li><a href="javascript:void(0)" class="nav-desktop-items desk-link">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      
           <div class="container-content">
             <div class="heading-container" data-aos="fade-up" data-aos-delay="100">
               <h2 class="heading smscr-margin-10" id="portfolio-section">My Work</h2>
@@ -124,7 +111,6 @@
   <div class="container">
     <div class="row">
       <div class="f-section">
-        <div class="container-side-nav"></div>
   
         <div class="container-content" id="skills-section">
           <div class="page-2">
@@ -234,7 +220,6 @@
         </div>
       </div>
     </div>
-      <div class="container-side-nav"></div>
         <div class="container-content" id="about-section">
           <div class="row flex">
             <div class="about-info-holder">
@@ -246,11 +231,18 @@
                   Nowadays, I'm spending most of my time learning and working on my personal projects.</p>
                   <ul class="about-info">
                     <li class="about-list"><span class="bold margin-right margin-top-15">Name: </span> <span class="margin-top-15">Abid Al-Wasi</span></li>
+
                     <li class="about-list"><span class="bold margin-right margin-top-15">Email: </span> <span class="margin-top-15">abidalwasi@outlook.com</span></li>
+
                     <li class="about-list"><span class="bold margin-right margin-top-15">Phone: </span> <span class="margin-top-15">+88 0131-0167-086</span></li>
+
                     <li class="about-list"><span class="bold margin-right margin-top-15">Age: </span> <span class="margin-top-15">18</span></li>
-                    <li class="about-list"><span class="bold margin-right margin-top-15">Country: </span> <span class="margin-top-15"><a href="https://www.google.com/search?q=bangladesh" class="hyperlink">Bangladesh</a></span></li>
+
+                    
+                    <li class="about-list"><span class="bold margin-right margin-top-15">Country: </span> </li><a href="https://www.google.com/search?q=bangladesh" class="hyperlink left margin-top-15">Bangladesh</a>
+                      
                     <li class="about-list margin-top-25"><button class="btn-primary"><a href="javascript:void(0)" class="btn-primary">Read more <i class="fas fa-arrow-right btn-icon"></i></a></button></li>
+
                   </ul>
               </div>
             </div>
@@ -259,8 +251,6 @@
             </div>
           </div>
         </div>
-
-        <div class="container-side-nav"></div>
         <div class="container-content" id="services-section">
           <div class="services-info-holder">
             <h2 class="heading" data-aos="fade-up" data-aos-delay="100">Services</h2>
@@ -318,8 +308,6 @@
             </div>
           </div>
         </div>
-
-        <div class="container-side-nav"></div>
         <div class="container-content" id="testimonial-section">
           <div class="testimonial-info-holder">
             <div class="vertical-margin-50">
@@ -493,7 +481,7 @@ bar3.animate(0.6);
       },
       responsive: [
         {
-          breakpoint: 575,
+          breakpoint: 770,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3
@@ -546,28 +534,16 @@ bar3.animate(0.6);
         var scrollbarLocation = $(this).scrollTop();
         var scrollLink = $(".nav-link");
     
-      scrollLink.each(function() {
+    //   scrollLink.each(function() {
       
-      var sectionOffset = $(this.hash).offset().top - 220;
-      console.log(scrollLink.length);
-      if ( sectionOffset <= scrollbarLocation ) {
-        // for (i = 0; i <= scrollLink.length; i++) {
-        //   counter++;
-        // }
-        // console.log(counter);
-        $(this).siblings().removeClass('active-nav');
-        $(this).addClass('active-nav');
-        // $(this).siblings().removeClass('active-nav');
-      } 
-      else {
-        $(this).removeClass('active-nav');
-          // if ($(this).hasClass('active-nav')) {
-          // }
-        }
-    });
+    //   var sectionOffset = $(this.hash).offset().top - 220;
+    //   console.log(scrollLink.length);
+      
+    // });
       });
       AOS.init({offset: 80, duration: 300});
   </script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
