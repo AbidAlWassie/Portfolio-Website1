@@ -179,6 +179,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.7rem;
   margin-top: 4px;
   font-family: Poppins;
+  z-index: 100;
   /* left: 8px; */
   /* font-family: "Titillium Web"; */
 }
@@ -1131,12 +1132,20 @@ textarea {
   height: 35px;
 }
 
-.icon-small {
+.icon-mid {
   position: relative;
   top: 7px;
   margin-right: 3px;
   width: 25px;
   height: 25px;
+}
+
+.icon-small {
+  position: relative;
+  top: 3px;
+  margin-right: 3px;
+  width: 20px;
+  height: 20px;
 }
 
 .list-services {
@@ -1146,4 +1155,13 @@ textarea {
 
 .service-list {
   line-height: 40px;
+}
+
+.disabled {
+  user-select: none;
+  /* -webbkit-user-select: none; */
+}
+
+.about-contact-list {
+  margin-bottom: 20px;
 }

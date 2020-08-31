@@ -286,6 +286,10 @@
     justify-content: center;
     /* text-align: center; */
   }
+
+  .footer-items {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 1110px) {
