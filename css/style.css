@@ -1098,7 +1098,7 @@ textarea {
   width: 90%;
 }
 
-.center {
+.center-align {
   display: flex;
   text-align: center;
   justify-content: center;
