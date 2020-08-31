@@ -186,6 +186,7 @@
 
   .skills-container-circles {
     display: grid;
+    justify-content: center;
     /* margin: 0 auto; */
     /* justify-content: center;
     align-items: center;
