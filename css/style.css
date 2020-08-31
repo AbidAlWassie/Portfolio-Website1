@@ -1084,3 +1084,26 @@ textarea {
   height: 50px;
   width: 200px;
 }
+
+.footer-section {
+  font-size: 16px;
+  background: #000000;
+  padding: 7em 0;
+  z-index: 0;
+  color: #fff;
+}
+
+.footer-items {
+  display: flex;
+  width: 90%;
+}
+
+.center {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer-text {
+  color: rgba(255, 255, 255, 0.7);
+}
