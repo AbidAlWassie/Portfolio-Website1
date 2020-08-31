@@ -1054,7 +1054,7 @@ textarea:focus {
   /* height: inherit !important; */
 }
 
-.contact-form {
+.contact {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1062,7 +1062,7 @@ textarea:focus {
   background-color: rgb(243, 243, 243);
 }
 
-.contact-form input {
+.contact input {
   height: 53px;
   margin: 0 0 20px 0;
   font-size: 16px;
