@@ -7,23 +7,38 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/glider.css">
   <link rel="stylesheet" href="css/media-queries.css">
-  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
   <script src="js/aos.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="72">
   <nav class="navbar">
     <div class="container">
       <a class="navbar-brand" href="index.html"><span class="firstLetter">A</span><span class="otherLetters" draggable="false">bid</span>
       </a>
       <ul class="navbar-nav nav-items">
-        <li class="nav-item"><a href="#home" class="nav-link scroll-link" draggable="false">Home</a></li>
-        <li class="nav-item"><a href="#portfolio-section" class="nav-link scroll-link" draggable="false">Portfolio</a></li>
-        <li class="nav-item"><a href="#skills-section" class="nav-link scroll-link" draggable="false">Skills</a></li>
-        <li class="nav-item"><a href="#about-section" class="nav-link scroll-link" draggable="false">About</a></li>
-        <li class="nav-item"><a href="#services-section" class="nav-link scroll-link" draggable="false">Services</a></li>
-        <li class="nav-item"><a href="#contact-section" class="nav-link scroll-link" draggable="false">Contact</a></li>
+        <li class="nav-item">
+          <a href="#section1" class="nav-link scroll-link" draggable="false">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#section2" class="nav-link scroll-link" draggable="false">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#section3" class="nav-link scroll-link" draggable="false">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a href="#section4" class="nav-link scroll-link" draggable="false">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#section5" class="nav-link scroll-link" draggable="false">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="#section6" class="nav-link scroll-link" draggable="false">Contact</a>
+        </li>
       </ul>
       <div class="menu-btn" id="menuBtn">
         <div class="btn-line"></div>
@@ -35,15 +50,15 @@
   <div class="nav-mobile">
     <ul>
       <!-- <li><a href="javascript:void(0)" id="getToProjects" class="nav-mobile-items">Projects</a></li> -->
-      <li><a href="#portfolio-section" class="nav-mobile-items scroll-link">Portfolio</a></li>
-      <li><a href="#skills-section" id="getToSkills" class="nav-mobile-items scroll-link">Skills</a></li>
-      <li><a href="#about-section" id="getToAbout" class="nav-mobile-items scroll-link">About</a></li>
-      <li><a href="javascript:void(0)" id="getToServices" class="nav-mobile-items scroll-link">Services</a></li>
-      <li><a href="javascript:void(0)" id="getToContact" class="nav-mobile-items scroll-link">Contact</a></li>
+      <li><a href="javascript:void(0)" class="nav-mobile-items">Portfolio</a></li>
+      <li><a href="javascript:void(0)" class="nav-mobile-items">Skills</a></li>
+      <li><a href="javascript:void(0)" class="nav-mobile-items">About</a></li>
+      <li><a href="javascript:void(0)" class="nav-mobile-items">Services</a></li>
+      <li><a href="javascript:void(0)" class="nav-mobile-items">Contact</a></li>
       <!-- <li><a href="javascript:void(0)" id="getToTop" class="nav-mobile-items">Top</a></li> -->
     </ul>
   </div>
-  <div class="hero-section1 js-fullheight" id="section-1">
+  <div class="hero-section1 js-fullheight" id="section1">
     <div class="overlay-half-x"></div>
       <div class="container">
         <div class="info" id="home">
@@ -56,7 +71,7 @@
         </div>
     </div>
     <div class="mouse">
-      <a href="#portfolio-section" id="mouseBtn" class="mouse-icon scroll-link" style="-webkit-transform: rotate(45deg);
+      <a href="#section2" id="mouseBtn" class="mouse-icon scroll-link" style="-webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);" draggable="false">
         <div class="mouse-wheel" style="-webkit-transform: rotate(-45deg);
@@ -76,7 +91,7 @@
       
           <div class="container-content">
             <div class="heading-container" data-aos="fade-up" data-aos-delay="100">
-              <h2 class="heading smscr-margin-10" id="portfolio-section">My Work</h2>
+              <h2 class="heading smscr-margin-10" id="section2">My Work</h2>
               <a href="javascript:void(0)" class="heading-link smscr-margin-10"><i class="fa fa-arrow-right"></i> View all</a>
             </div>
             <div class="glider-contain">
@@ -112,7 +127,7 @@
     <div class="row">
       <div class="f-section">
   
-        <div class="container-content" id="skills-section">
+        <div class="container-content" id="section3">
           <div class="page-2">
 
             <h2 class="heading" data-aos="fade-up" data-aos-delay="100">Skills</h2>
@@ -220,7 +235,7 @@
         </div>
       </div>
     </div>
-        <div class="container-content" id="about-section">
+        <div class="container-content" id="section4">
           <div class="row flex">
             <div class="about-info-holder">
               <h2 class="heading" data-aos="fade-up" data-aos-delay="100">About me</h2>
@@ -251,7 +266,7 @@
             </div>
           </div>
         </div>
-        <div class="container-content" id="services-section">
+        <div class="container-content" id="section5">
           <div class="services-info-holder">
             <h2 class="heading" data-aos="fade-up" data-aos-delay="100">Services</h2>
 
@@ -364,7 +379,7 @@
             </div>
         </div>
       </div>
-      <div class="container-content" id="contact-section">
+      <div class="container-content" id="section6">
         <div class="contact-holder">
           <h2 class="heading">Contact</h2>
           <form class="contact" netlify>
@@ -489,13 +504,11 @@
     </div>
   </footer>
 
-  <!-- <script src="js/bootstrap.min.js"></script> -->
-  <script src="js/jquery-3.5.1.min.js"></script>
+  <!-- <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script> -->
   <script src="js/glider.min.js"></script>
   <script src="js/progressbar.min.js"></script>
-
   <script>
-    
   var bar1 = new ProgressBar.Circle(circle1, {
   color: '#2b2b2b',
   // This has to be the same size as the maximum width to
@@ -524,7 +537,7 @@
   }
 });
 bar1.text.style.fontFamily = '"Open sans", Helvetica, sans-serif';
-bar1.text.style.fontSize = '2rem';
+bar1.text.style.fontSize = '3rem';
 
 bar1.animate(0.90);
 
@@ -556,7 +569,7 @@ var bar2 = new ProgressBar.Circle(circle2, {
   }
 });
 bar2.text.style.fontFamily = '"Open sans", Helvetica, sans-serif';
-bar2.text.style.fontSize = '2rem';
+bar2.text.style.fontSize = '3rem';
 bar2.animate(0.85);
 
 var bar3 = new ProgressBar.Circle(circle3, {
@@ -587,7 +600,7 @@ var bar3 = new ProgressBar.Circle(circle3, {
   }
 });
 bar3.text.style.fontFamily = '"Open sans", Helvetica, sans-serif';
-bar3.text.style.fontSize = '2rem';
+bar3.text.style.fontSize = '3rem';
 bar3.animate(0.6);
 
     new Glider(document.querySelector(".projectGlider"), {
@@ -646,23 +659,8 @@ bar3.animate(0.6);
       });
 
       let counter = 0;
-
-      window.addEventListener("scroll", function() {
-        const scrolled = window.scrollY;
-        // console.log(scrolled);
-        var scrollbarLocation = $(this).scrollTop();
-        var scrollLink = $(".nav-link");
-    
-    //   scrollLink.each(function() {
-      
-    //   var sectionOffset = $(this.hash).offset().top - 220;
-    //   console.log(scrollLink.length);
-      
-    // });
-      });
       AOS.init({offset: 80, duration: 300});
   </script>
-  <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
