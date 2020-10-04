@@ -13,6 +13,7 @@ html {
 }
 
 body {
+  /* position: relative; */
   margin: 0;
   /* overflow-x: hidden; */
   font-size: 16px !important;
@@ -41,20 +42,38 @@ a {
 }
 
 .hyperlink {
-  display: block;
-  height: 20px;
+  /* display: block; */
+  cursor: pointer;
   text-decoration: none;
   color: #0d37ab;
-  border-bottom: 1.1px solid #0d37ab83;
+  border-bottom: 0.2rem solid #0d37ab83;
   padding-right: 0;
 }
 
 .hyperlink:hover {
-  border-bottom: 1.1px solid #0d37ab;
+  border-bottom: 0.2rem solid #0d37ab;
+}
+
+.height-30 {
+  height: 40px;
+}
+
+.height-20 {
+  height: 20px;
+}
+
+.block {
+  display: block;
+  
 }
 
 h1, h2, h3, h4, h5, h6 {
   /* margin: 0 auto 0 auto; */
+}
+
+.bigheading {
+  font-size: 4rem;
+  font-weight: 600;
 }
 
 .container {
@@ -106,14 +125,29 @@ h1, h2, h3, h4, h5, h6 {
   background: #8b8b8b; 
 }
 
+.highlightSe {
+  background: rgba(20, 141, 255, 0.917);
+  color: #fff;
+}
+
+.line-height {
+  line-height: 40px;
+}
+
+.subheading {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .navbar {
   height: 74px;
   background: transparent !important;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
   z-index: 20;
+  /* margin-bottom: 0; */
   /* padding: 0 20px; */
 }
 
@@ -159,23 +193,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-nav>li>a {
-  margin: 20px 12px;
+  margin: 20px auto;
 }
 
-.nav-item {
+.nav {
   z-index: 10;
 }
 
+.nav-item {
+  height: 36px;
+  margin: auto 10px;
+}
+
 .nav-link {
+  user-select: none;
   position: relative;
   bottom: 5px;
   z-index: 50;
   margin: 0 20px;
 }
 
-.nav-link.active{
+/* .nav-link */
+li.active{
+  /* text-decoration: underline; */
+  /* background: #000; */
+  border-bottom: 2px solid #002fff !important;
   /* font-weight: bold; */
-  border-bottom: 2px solid #002fff;
   /* text-decoration: underline; */
 }
 
@@ -451,6 +494,18 @@ h1, h2, h3, h4, h5, h6 {
   /* padding-right: auto; */
 }
 
+.margin-top-none {
+  margin-top: 0 !important;
+}
+
+.margin-top-5 {
+  margin: 5px 0 0 0;
+}
+
+.margin-top-10 {
+  margin: 10px 0 0 0;
+}
+
 .margin-top-15 {
   margin: 15px 0 0 0;
 }
@@ -517,6 +572,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 50px;
 }
 
+.margin-none {
+  margin: 0 !important;
+}
 
 .horizontal-margin-none{
   margin-right: 0;
@@ -581,6 +639,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 100px;
 }
 
+.vertical-margin-10 {
+  margin: 10px auto;
+}
+
 .vertical-margin-50 {
   margin: 50px auto;
 }
@@ -594,7 +656,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 50px;
 }
 
-.margin-bottom-b2 {
+.margin-bottom-50 {
   margin-bottom: 50px;
 }
 
@@ -800,8 +862,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white !important;
   position: relative;
   right: -15px;
-  top: -23px;
-  padding-right: 15px;
+  top: 15px;
   /* padding-left: 10px;
   padding-right: 10px; */
 }

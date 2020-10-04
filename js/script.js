@@ -2,6 +2,11 @@ window.onload = function () {
 
   $(document).ready(function(){
 
+    // $("body").scrollspy({
+    //   target: ".navbar",
+    //   offset: "72"
+    // });
+
     var scrollWindow = function() {
       $(window).scroll(function(){
         var $w = $(this),
