@@ -64,6 +64,11 @@
     display: flex;
   }
 
+  .row-padding {
+    padding-top: 25em;
+    padding-bottom: 10em;
+  }
+
   .nav-mobile-items {
     display: flex;
     position: relative;
@@ -276,6 +281,8 @@
   .container {
     max-width: 1000px;
   }
+
+  
 
   /* .container-side-nav {
     max-width: 220px;

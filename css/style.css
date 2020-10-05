@@ -84,14 +84,18 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -10;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .row {
   margin-top: 6em;
   margin-bottom: 40px;
 }
 
 .row-padding {
-  padding-top: 8em;
-  padding-bottom: 8em;
+  padding-top: 5em;
+  padding-bottom: 3em;
 }
 
 .full-height {
