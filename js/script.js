@@ -76,7 +76,7 @@ window.onload = function () {
   
         var hash = this.hash;
   
-        var target = $(hash).offset().top-300;
+        var target = $(hash).offset().top-73.99;
         $('html, body').animate({
           scrollTop: target
         }, 500, function(){
