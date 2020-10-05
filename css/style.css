@@ -860,11 +860,6 @@ li.active{
 .nav-mobile-items {
   display: none;
   color: white !important;
-  position: relative;
-  right: -15px;
-  top: 15px;
-  /* padding-left: 10px;
-  padding-right: 10px; */
 }
 
 .portfolio-nav {

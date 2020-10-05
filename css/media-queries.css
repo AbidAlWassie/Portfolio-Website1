@@ -60,8 +60,19 @@
     transition: all ease-in-out 400ms !important;
   }
 
+  .nav-mobile {
+    display: flex;
+  }
+
   .nav-mobile-items {
     display: flex;
+    position: relative;
+    justify-content: space-between !important;
+    margin: 0 auto;
+    top: -25px;
+    /*right: -15px;*/
+    /* padding-left: 10px;
+    padding-right: 10px; */
   }
 
   .navbar-nav>li>a {
