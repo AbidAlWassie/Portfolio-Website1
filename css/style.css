@@ -89,6 +89,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 40px;
 }
 
+.row-padding {
+  padding-top: 8em;
+  padding-bottom: 8em;
+}
+
 .full-height {
   height: 900px;
   /* height: 100%; */
