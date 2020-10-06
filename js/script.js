@@ -54,15 +54,6 @@ window.onload = function () {
             sd.removeClass("sleep");
           }
         }
-
-        // console.log(navLink[0]);
-        // if (st >= 895) {
-        //   if (!navLink[0].hasClass("active-nav")) {
-        //     navLink[0].addClass("active-nav");
-        //   } else {
-        //     navLink[0].removeClass("active-nav");
-        //   }
-        // }
       });
     };
     scrollWindow();
