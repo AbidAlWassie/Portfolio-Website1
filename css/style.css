@@ -203,6 +203,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-nav>li>a {
   margin: 20px auto;
+  line-height: 20px;
 }
 
 .nav {
