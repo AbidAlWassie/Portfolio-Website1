@@ -223,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 20px;
 }
 
-.nav-item:hover {
+.nav-item:hover > a {
   border-bottom: 2px solid #0075f6 !important;
 }
 
