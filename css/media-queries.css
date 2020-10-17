@@ -61,7 +61,7 @@
   }
 
   .nav-mobile {
-    display: flex;
+    /*display: flex;*/
   }
 
   .row-padding {
@@ -108,15 +108,15 @@
   }
 
   .nav-mobile, .nav-mobile-items {
-    display: block;
+    /*display: block;*/
   }
 
   .nav-mobile {
-    display: block;
-    /* flex-direction: column !important; */
+    /*display: block;*/
     margin: 0 auto;
-    /* justify-content: space-between; */
-    /* align-items: center; */
+     /*flex-direction: column !important; */
+     /*justify-content: space-between; */
+     /*align-items: center; */
   }
 
   .nav-mobile-items {
