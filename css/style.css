@@ -878,7 +878,7 @@ li.active > a{
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 8px 0 !important;
+  padding: 8px 6px !important;
   margin: 0 !important;
   z-index: 5000;
 }
@@ -891,7 +891,7 @@ li.active > a{
 }
 
 .alert-info-icon {
-  /*margin-left: 10px;*/
+  margin-right: 10px !important;
   border: 1px solid transparent;
   background: rgb(75, 183, 255);
   border-radius: 50%;
