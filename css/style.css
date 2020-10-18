@@ -878,7 +878,7 @@ li.active > a{
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 8px !important;
+  padding: 8px 0 !important;
   margin: 0 !important;
   z-index: 5000;
 }
@@ -916,7 +916,7 @@ li.active > a{
 
 .alert-message {
   display: inline-block;
-  padding: 6px 6px;
+  padding: 6px 0;
   margin: 0 !important;
 }
 
