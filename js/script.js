@@ -19,7 +19,7 @@ window.onload = function () {
     function ipLookup() {
       var jsx = $.get('http://ip-api.com/json', function (r) {
         if (r.country === "Bangladesh") {
-          location.replace("/bd.html")
+          location.replace("https://abidalwasi.netlify.app/bd.html")
         }
         console.log(r.country);
         // console.log(jsx.country);
