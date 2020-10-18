@@ -64,6 +64,10 @@
     /*display: flex;*/
   }
 
+  .alert1 {
+    display: block;
+  }
+
   .row-padding {
     padding-top: 25em;
     padding-bottom: 10em;
