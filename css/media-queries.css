@@ -277,9 +277,10 @@
 
 @media (max-width: 576px) {
 
-  .service-cards-container {
-    grid-template-columns: 1fr;
-  }
+  /*.service-cards-container {*/
+  /*  grid-template-columns: 1fr;*/
+  /*  margin: 0 auto !important;*/
+  /*}*/
 
   .progress-bar {
     width: 350px;
@@ -346,6 +347,24 @@
   }
 }
 
+@media screen and (max-width: 720px) {
+  .card-service {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+
+  .service-cards-container {
+    grid-template-columns: 1fr;
+    margin: 0 auto !important;
+  }
+
+  .card-service {
+    max-width: 300px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .review-container {
     min-height: 400px;
@@ -390,9 +409,6 @@
   h4 {
     font-size: 14px !important;
   }
-
-
-
 
 }
 
