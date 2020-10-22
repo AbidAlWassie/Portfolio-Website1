@@ -274,6 +274,11 @@
   margin: 0;
 }
 
+@media (max-width: 576px) {
+  .progress-bar {
+    width: 350px;
+  }
+}
 /* @media (min-width: 714px) {
   .container {
     max-width: 560px; } 
@@ -332,6 +337,19 @@
 
   .footer-items {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .review-container {
+    min-height: 400px;
+  }
+  .horizontal-margin-50 {
+    margin: 0 !important;
+  }
+
+  .contact {
+    padding: 20px;
   }
 }
 

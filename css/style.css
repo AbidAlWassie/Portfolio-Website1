@@ -416,7 +416,7 @@ li.active > a{
   flex-direction: column;
   background: rgb(255, 255, 255);
   width: 98%;
-  height: 250px;
+  min-height: 250px;
   margin: auto 5px;
 }
 
