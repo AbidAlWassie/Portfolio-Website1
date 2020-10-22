@@ -76,10 +76,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-img .twitter-color {
-  fill: #1DA1F2 !important;
-}
-
 .container {
   width: 100%;
   margin: 0 auto;
@@ -400,12 +396,31 @@ li.active > a{
 
 
 .card-service {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
-  height: 98%;
-  width: 98%;
-  /* background: #f7f7f7; */
-  border: 1px solid black;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.58);
+  /*box-shadow: 0 0 43px -19px rgba(0,0,0,0.51);*/
+  /*border: 1px solid black;*/
   margin: auto 0;
+  /*z-index: 100;*/
+}
+
+.card-service:hover {
+  background: #3F65FF;
+  color: #fff;
+}
+
+.card-service:hover .service-icon {
+  fill: #fff;
+}
+
+.service-icon {
+  fill: #3F65FF;
 }
 
 .service-cards-container {
@@ -700,8 +715,6 @@ li.active > a{
   bottom: 3px;
   /* padding-bottom: 6px; */
 }
-
-
 
 .skills-container-bars {
   margin-top: 60px;
