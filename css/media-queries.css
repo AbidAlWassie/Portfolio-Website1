@@ -360,9 +360,9 @@
     margin: 0 auto !important;
   }
 
-  /*.card-service {*/
-  /*  width: 100% !important;*/
-  /*}*/
+  .card-service {
+    /*margin: 100px;*/
+  }
 }
 
 @media screen and (max-width: 480px) {
