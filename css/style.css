@@ -391,8 +391,9 @@ li.active > a{
 }
 
 .services-info-holder {
-  display: grid;
+  /*display: grid;*/
 }
+
 
 .card-service {
   text-align: center;

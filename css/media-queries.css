@@ -184,8 +184,9 @@
     margin: 0 auto;
   }
 
-  .services-info-holder {
-    margin: 0 auto;
+  .service-cards-container {
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0;
     max-width: 380px;
     /* width: 100%; */
     /* margin-right: 20px; */
@@ -275,6 +276,11 @@
 }
 
 @media (max-width: 576px) {
+
+  .service-cards-container {
+    grid-template-columns: 1fr;
+  }
+
   .progress-bar {
     width: 350px;
   }
