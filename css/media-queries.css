@@ -1,9 +1,9 @@
 
 
 @media (max-width: 1250px) {
-  .navbar-nav {
-    margin: 10px 0 0 220px !important;
-  }
+  /*.navbar-nav {*/
+  /*  margin: 10px 0 0 220px !important;*/
+  /*}*/
 }
 
 @media (max-width: 1030px) {
@@ -11,6 +11,11 @@
     margin: 0 0 0 0;
     /* position: relative; */
 }
+
+  .navbar-nav {
+     margin: 10px 0 0 300px !important;
+  }
+
   .nav-desktop {
     display: none;
   }
