@@ -421,6 +421,11 @@
 
 @media screen and (max-width: 380px) {
 
+  .progress-bar {
+    /*justify-content: center;*/
+    width: 320px !important;
+  }
+
   /*.skills-container-circles {*/
   /*  display: flex;*/
   /*  justify-content: center;*/
