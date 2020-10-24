@@ -395,6 +395,15 @@
 
 @media screen and (max-width: 420px) {
 
+  .card-skill {
+    width: 350px !important;
+    height: 350px !important;
+  }
+
+  .skills-time-info {
+    padding: 0 15px 0 15px !important;
+  }
+
   h4 {
     font-size: 16px;
   }
@@ -411,6 +420,21 @@
 }
 
 @media screen and (max-width: 380px) {
+
+  /*.skills-container-circles {*/
+  /*  display: flex;*/
+  /*  justify-content: center;*/
+  /*}*/
+
+  .card-skill {
+    width: 320px !important;
+    height: 340px !important;
+  }
+
+  .skills-time-info {
+    padding: 0 15px 0 15px !important;
+  }
+
   h4 {
     font-size: 14px !important;
   }
