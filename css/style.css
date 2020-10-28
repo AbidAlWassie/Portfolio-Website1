@@ -1275,13 +1275,11 @@ textarea {
 }
 
 .sl-mid {
-  /* background: rgba(255, 255, 255, 0.1); */
   border-radius: 50%;
   /*background: rgba(255, 255, 255, 0.05);*/
   width: 50px;
   height: 50px;
   margin: 50px 20px 10px 0;
-  /* margin-right: 10px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1319,7 +1317,6 @@ textarea {
 
 .disabled {
   user-select: none;
-  /* -webbkit-user-select: none; */
 }
 
 .about-contact-list {
