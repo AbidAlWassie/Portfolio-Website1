@@ -15,7 +15,7 @@ html {
 body {
   margin: 0;
   font-size: 16px !important;
-  font-family: 'Open Sans', 'Poppins' !important;
+  font-family: 'Open Sans', 'Poppins', sans-serif !important;
   height: 100%;
   background: rgb(250, 250, 250);
 }
@@ -402,22 +402,23 @@ li.active > a{
   height: 300px;
   width: 100%;
   background: rgba(255, 255, 255, 0.58);
-  /*box-shadow: 0 0 43px -19px rgba(0,0,0,0.51);*/
-  /*border: 1px solid black;*/
   margin: auto 0;
-  /*z-index: 100;*/
+  transition: 100ms ease-in-out !important;
 }
 
 .card-service:hover {
   background: #3F65FF;
   color: #fff;
+  transition: 100ms ease-in-out !important;
 }
 
 .card-service:hover .service-icon {
   fill: #fff;
+  transition: 300ms ease-in-out;
 }
 
 .service-icon {
+  transition: 300ms ease-in-out;
   fill: #3F65FF;
 }
 
@@ -1079,7 +1080,6 @@ li.active > a{
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 130px;
   z-index: 2;
 }
 
