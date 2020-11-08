@@ -1027,10 +1027,7 @@ li.active > a{
 
 .btn-primary:hover i {
   opacity: 1 !important;
-  padding-left: 9px;
-  padding-right: 5px;
-  padding-top: 8px;
-  padding-bottom: 2px;
+  padding: 8px 5px 2px 9px;
   right: 0;
 }
 
