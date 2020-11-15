@@ -158,6 +158,10 @@ h1, h2, h3, h4, h5, h6 {
   /* padding: 0 20px; */
 }
 
+.navbar-space {
+  height: 74px;
+}
+
 .nav-expand {
   height: 424px !important;
   position: relative;
