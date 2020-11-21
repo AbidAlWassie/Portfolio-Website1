@@ -240,6 +240,10 @@ h1, h2, h3, h4, h5, h6 {
   transform: scaleX(1);
 }
 
+.nav-item.active > .nav-link {
+  color: #0075f6;
+}
+
 .nav-item:hover span:before {
   visibility: visible;
   transform: scaleX(1);
