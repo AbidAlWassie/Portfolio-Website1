@@ -87,7 +87,7 @@ window.onload = function () {
     scrollWindow();
     
     
-    var anchor = $(".scroll-link");
+    var anchor = $(".nav-link");
     anchor.on('click', function(event) {
 
       if (this.hash !== "") {
