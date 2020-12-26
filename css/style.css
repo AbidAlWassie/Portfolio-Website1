@@ -307,10 +307,8 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   bottom: 0;
   width: 50%;
-  /* opacity: 0.1; */
   background: #3e82ff1c;
   z-index: -1;
-  /* height: 452px; */
 }
 
 .info {
@@ -321,10 +319,6 @@ h1, h2, h3, h4, h5, h6 {
   /* transition: all 200ms ease-in-out; */
   /* position: relative; */
   /* margin: 400px 0; */
-}
-
-.align-items-center {
-
 }
 
 .intro {
