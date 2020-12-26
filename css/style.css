@@ -1239,6 +1239,51 @@ textarea:focus {
   background-color: rgb(243, 243, 243);
 }
 
+.contact-boxes {
+/*//height: 200px;*/
+}
+
+.contact-box {
+  height: 250px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.shadow1 {
+  webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.box-icon {
+  width: 100px;
+  height: 100px;
+  background: #3e64ff;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.box-icon i {
+  color: #fff;
+  font-size: 30px;
+}
+
+.contact input {
+  height: 53px;
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  border: 1px solid #c7c7c7;
+}
+
+.contact textarea {
+  font-size: 16px;
+  border: 1px solid #c7c7c7;
+  margin: 0 0 20px 0;
+}
+
 .contact input {
   height: 53px;
   margin: 0 0 20px 0;
@@ -1280,6 +1325,14 @@ textarea {
   width: 100%;
 }
 
+.center {
+  display: flex;
+  /*position: relative;*/
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .center-align {
   display: flex;
   text-align: center;
@@ -1314,6 +1367,17 @@ textarea {
   /*margin-bottom: 15px;*/
   width: 20px;
   height: 20px;
+}
+
+.icon-mid2 {
+  position: relative;
+  top: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-mid2.svg-path {
+  fill: #FFFFFF !important;
 }
 
 .icon-small {
