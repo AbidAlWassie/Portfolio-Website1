@@ -1247,7 +1247,10 @@ textarea:focus {
   height: 250px;
   width: 100%;
   padding-top: 20px;
-  padding-bottom: 20px;
+  /*padding-bottom: 20px;*/
+  /*padding-right: 0px;*/
+  /*padding-left: 0px;*/
+  /*padding: 0;*/
 }
 
 .shadow1 {
@@ -1259,11 +1262,18 @@ textarea:focus {
   width: 100px;
   height: 100px;
   background: #3e64ff;
-  margin: 0 auto;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+}
+
+.box-icon.center {
+  display: flex;
+  /*position: relative;*/
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .box-icon i {
@@ -1325,13 +1335,6 @@ textarea {
   width: 100%;
 }
 
-.center {
-  display: flex;
-  /*position: relative;*/
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
 .center-align {
   display: flex;
