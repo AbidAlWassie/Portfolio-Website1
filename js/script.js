@@ -13,7 +13,7 @@ window.onload = function () {
       }
     };
     
-    xhr.send();
+    // xhr.send();
     
     // console.log()
   };
