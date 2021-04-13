@@ -2,38 +2,38 @@ window.onload = function () {
 
   $(document).ready(function(){
   
-    // if ("geolocation" in navigator) {
-    //   navigator.geolocation.getCurrentPosition(function (p) {
-    //     var latitude = p.coords.latitude;
-    //     var longitude = p.coords.longitude;
-    //     $("#latitude").text(latitude);
-    //     $("#longitude").text(longitude);
-    //   }, function (e) {
-    //     ipLookup();
-    //   });
-    // } else {
-    //   ipLookup();
-    // }
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(function (p) {
+        var latitude = p.coords.latitude;
+        var longitude = p.coords.longitude;
+        $("#latitude").text(latitude);
+        $("#longitude").text(longitude);
+      }, function (e) {
+        ipLookup();
+      });
+    } else {
+      ipLookup();
+    }
     
     
-    // function ipLookup() {
-    //   var jsx = $.get('http://ip-api.com/json', function (r) {
-    //     if (r.country === "Bangladesh") {
-    //       location.replace("https://abidalwasi.netlify.app/bd.html")
-    //     }
-    //     console.log(r.country);
-    //     // console.log(jsx.country);
-    //   });
-    //
-    // }
-    //   ipLookup();
+    function ipLookup() {
+      var jsx = $.get('http://ip-api.com/json', function (r) {
+        if (r.country === "Bangladesh") {
+          location.replace("https://abidalwasi.netlify.app/bd.html")
+        }
+        console.log(r.country);
+        // console.log(jsx.country);
+      });
+
+    }
+      ipLookup();
     
     
 
-    // $("body").scrollspy({
-    //   target: ".navbar",
-    //   offset: "72"
-    // });
+    $("body").scrollspy({
+      target: ".navbar",
+      offset: "72"
+    });
 
     var scrollWindow = function() {
       $(window).scroll(function(){
