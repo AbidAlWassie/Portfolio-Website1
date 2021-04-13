@@ -20,7 +20,7 @@ window.onload = function () {
   
   
   function getData() {
-    sendHttpRequest("GET", "http://ip-api.com/json");
+    sendHttpRequest("GET", "https://api.ipgeolocationapi.com/geolocate/103.106.239.34");
   }
   
   getData();
