@@ -8,12 +8,12 @@ window.onload = function () {
       const data = JSON.parse(xhr.response);
       console.log(data);
       
-      if (data.country === "Bangladesh") {
-        console.log("Hello, ", data.country);
+      if (data.alpha2 === "BD") {
+        console.log("Hello, ", data.alpha2);
       }
     };
     
-    // xhr.send();
+    xhr.send();
     
     // console.log()
   };
