@@ -1,4 +1,29 @@
 window.onload = function () {
+  
+  const sendHttpRequest = (method, url) => {
+    const xhr = new XMLHttpRequest();
+    xhr.open(method, url);
+    
+    xhr.onload = () => {
+      const data = JSON.parse(xhr.response);
+      console.log(data);
+      
+      if (data.country === "Bangladesh") {
+        console.log("Hello, ", data.country);
+      }
+    };
+    
+    xhr.send();
+    
+    // console.log()
+  };
+  
+  
+  function getData() {
+    sendHttpRequest("GET", "http://ip-api.com/json");
+  }
+  
+  getData();
 
   $(document).ready(function(){
   
