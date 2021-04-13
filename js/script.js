@@ -2,18 +2,18 @@ window.onload = function () {
 
   $(document).ready(function(){
   
-    if ("geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition(function (p) {
-        var latitude = p.coords.latitude;
-        var longitude = p.coords.longitude;
-        $("#latitude").text(latitude);
-        $("#longitude").text(longitude);
-      }, function (e) {
-        ipLookup();
-      });
-    } else {
-      ipLookup();
-    }
+    // if ("geolocation" in navigator) {
+    //   navigator.geolocation.getCurrentPosition(function (p) {
+    //     var latitude = p.coords.latitude;
+    //     var longitude = p.coords.longitude;
+    //     $("#latitude").text(latitude);
+    //     $("#longitude").text(longitude);
+    //   }, function (e) {
+    //     ipLookup();
+    //   });
+    // } else {
+    //   ipLookup();
+    // }
     
     
     function ipLookup() {
