@@ -1,29 +1,29 @@
 window.onload = function () {
   
-  const sendHttpRequest = (method, url) => {
-    const xhr = new XMLHttpRequest();
-    xhr.open(method, url);
-    
-    xhr.onload = () => {
-      const data = JSON.parse(xhr.response);
-      console.log(data);
-      
-      if (data.alpha2 === "BD") {
-        console.log("Hello, ", data.alpha2);
-      }
-    };
-    
-    xhr.send();
-    
-    // console.log()
-  };
-  
-  
-  function getData() {
-    sendHttpRequest("GET", "https://api.ipgeolocationapi.com/geolocate/103.106.239.34");
-  }
-  
-  getData();
+  // const sendHttpRequest = (method, url) => {
+  //   const xhr = new XMLHttpRequest();
+  //   xhr.open(method, url);
+  //
+  //   xhr.onload = () => {
+  //     const data = JSON.parse(xhr.response);
+  //     console.log(data);
+  //
+  //     if (data.alpha2 === "BD") {
+  //       console.log("Hello, ", data.alpha2);
+  //     }
+  //   };
+  //
+  //   xhr.send();
+  //
+  //   // console.log()
+  // };
+  //
+  //
+  // function getData() {
+  //   sendHttpRequest("GET", "https://api.ipgeolocationapi.com/geolocate/103.106.239.34");
+  // }
+  //
+  // getData();
 
   $(document).ready(function(){
   
