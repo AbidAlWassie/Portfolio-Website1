@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" id="html" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,6 +56,10 @@
         <div class="btn-line"></div>
         <div class="btn-line"></div>
         <div class="btn-line"></div>
+      </div>
+
+      <div class="toggle-container">
+        <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
       </div>
     </div>
   </nav>
@@ -782,6 +786,29 @@
   <script src="js/glider.min.js"></script>
   <script src="js/progressbar.min.js"></script>
   <script>
+
+  var checkbox = document.querySelector('input[name=theme]');
+  var main = document.getElementById("html");
+
+  checkbox.addEventListener('change', function() {
+      if(this.checked) {
+        trans();
+        main.className = "";
+          // document.documentElement.setAttribute('data-theme', 'dark')
+      } else {
+        trans();
+        main.className = "dark";
+          // document.documentElement.setAttribute('data-theme', 'light')
+      }
+  })
+
+  let trans = () => {
+      document.documentElement.classList.add('transition');
+      window.setTimeout(() => {
+          document.documentElement.classList.remove('transition')
+      }, 500);
+  }
+
   var bar1 = new ProgressBar.Circle(circle1, {
   color: '#2b2b2b',
   // This has to be the same size as the maximum width to

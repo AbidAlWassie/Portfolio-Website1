@@ -10,7 +10,7 @@
     /* position: relative; */
   }
   .navbar-nav {
-    margin: 10px 0 0 300px !important;
+    margin: 10px 40px 0 260px !important;
   }
   .nav-desktop {
     display: none;
@@ -60,6 +60,11 @@
   }
 } */
 @media screen and (max-width: 992px) {
+  .toggle-container {
+    position: relative;
+    top: -57px;
+    right: 80px;
+  }
   .navbar {
     -webkit-transition: all ease-in-out 400ms !important;
     transition: all ease-in-out 400ms !important;
@@ -471,5 +476,14 @@
   .container-content {
     max-width: 760px;
   } */
+}
+
+@media (min-width: 1030px) {
+  .toggle-container {
+    float: right;
+    position: relative;
+    right: -10px;
+    z-index: 1000;
+  }
 }
 /*# sourceMappingURL=media-queries.css.map */
