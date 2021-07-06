@@ -12,9 +12,36 @@
     "Liberation Mono", "Courier New", monospace;
 }
 
+.flex {
+  display: flex;
+}
+
+// Dark Mode Styles
 html.dark {
+  html {
+    color-scheme: dark;
+    scrollbar-color: #686868 #424242;
+  }
+
+  ::-webkit-scrollbar {
+    z-index: 200;
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #2b2b2b;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #39238a;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #40279b;
+  }
+
   body {
-    background: rgb(37, 37, 37);
+    background: rgb(24, 24, 24);
     color: rgb(236, 236, 236);
   }
 
@@ -32,6 +59,63 @@ html.dark {
 
   .otherLetters {
     color: rgb(255, 255, 255);
+  }
+
+  #mouseBtn {
+    background: #1c2331;
+  }
+
+  .hyperlink {
+    color: #4d6dfa;
+  }
+
+  .btn-line {
+    background-color: #999999 !important;
+  }
+
+  .card-service {
+    background-color: rgb(24, 24, 24);
+  }
+
+  .card-service:hover {
+    background: #3b57c5;
+    color: #fff;
+    -webkit-transition: 150ms ease-in-out !important;
+    transition: 150ms ease-in-out !important;
+  }
+
+  .review-container {
+    background: rgb(39, 39, 39);
+  }
+
+  .quote i {
+    background: #969696;
+  }
+
+  .contact-holder .row {
+    background: #222222;
+  }
+
+  .contact-box {
+  }
+
+  .contact {
+    background-color: #19191a;
+  }
+
+  .contact-anchor {
+    color: #c7c7c7;
+  }
+
+  .contact input,
+  textarea {
+    border: 1px solid #3a3a3a;
+    color: rgb(240, 240, 240);
+    outline: none;
+  }
+
+  .form-control {
+    background: rgb(10, 10, 10);
   }
 }
 
