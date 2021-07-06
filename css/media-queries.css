@@ -170,7 +170,7 @@
     color: #fff;
   }
   .navbar-nav-dark {
-    background: #0c172e !important;
+    background: #0c172e;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

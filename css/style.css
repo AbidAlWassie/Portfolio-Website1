@@ -14,7 +14,7 @@
     /* position: relative; */
   }
   .navbar-nav {
-    margin: 10px 0 0 300px !important;
+    margin: 10px 40px 0 260px !important;
   }
   .nav-desktop {
     display: none;
@@ -64,6 +64,11 @@
   }
 } */
 @media screen and (max-width: 992px) {
+  .toggle-container {
+    position: relative;
+    top: -57px;
+    right: 80px;
+  }
   .navbar {
     -webkit-transition: all ease-in-out 400ms !important;
     transition: all ease-in-out 400ms !important;
@@ -477,6 +482,15 @@
   } */
 }
 
+@media (min-width: 1030px) {
+  .toggle-container {
+    float: right;
+    position: relative;
+    right: -10px;
+    z-index: 1000;
+  }
+}
+
 :root {
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
@@ -640,7 +654,7 @@ html.dark .contact-holder .row {
 }
 
 html.dark .contact {
-  background-color: #19191a;
+  background-color: #1a1a1a;
 }
 
 html.dark .contact-anchor {
