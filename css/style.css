@@ -621,6 +621,10 @@ html.dark .btn-line {
   background-color: #999999 !important;
 }
 
+html.dark .card-skill {
+  background-color: #202020;
+}
+
 html.dark .project-info p {
   color: #4340eb;
 }
