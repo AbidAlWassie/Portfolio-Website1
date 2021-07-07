@@ -174,7 +174,7 @@
     color: #fff;
   }
   .navbar-nav-dark {
-    background: #0c172e !important;
+    background: #0c172e;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -670,6 +670,14 @@ html.dark textarea {
 
 html.dark .form-control {
   background: #0a0a0a;
+}
+
+html.dark .circles svg path:nth-child(1) {
+  stroke: #535353 !important;
+}
+
+html.dark .progress-bar {
+  background: #535353;
 }
 
 body {

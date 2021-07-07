@@ -196,6 +196,14 @@ html.dark {
   .form-control {
     background: rgb(10, 10, 10);
   }
+
+  .circles svg path:nth-child(1) {
+    stroke: #535353 !important;
+  }
+
+  .progress-bar {
+    background: #535353;
+  }
 }
 
 body {
