@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
   <script src="js/aos.js"></script>
+  
 </head>
 <!-- <body> -->
 <body data-spy="scroll" data-target=".navbar" data-offset="373.99">
@@ -152,7 +153,7 @@
       <div class="f-section">
   
         <div class="container-content" id="section3">
-          <div class="page-2">
+          <div class="page-2" onload="loadSkills()">
 
             <h2 class="heading" data-aos="fade-up" data-aos-delay="100">Skills</h2>
 
@@ -166,8 +167,8 @@
                 </div>
                 <div class="half text-center">
                   <div class="skills-time-info border-right">
-                    <div class="text-large text-bold">5%</div>
-                    <div class="text-small text-grey">Last week</div>
+                    <div class="text-large text-bold">10%</div>
+                    <div class="text-small text-grey">Last 3 months</div>
                   </div>
                   <div class="skills-time-info second">
                     <div class="text-large text-bold">85%</div>
@@ -185,8 +186,8 @@
                 </div>
                 <div class="half text-center">
                   <div class="skills-time-info border-right">
-                    <div class="text-large text-bold">10%</div>
-                    <div class="text-small text-grey">Last month</div>
+                    <div class="text-large text-bold">15%</div>
+                    <div class="text-small text-grey">Last 4 months</div>
                   </div>
                   <div class="skills-time-info second">
                     <div class="text-large text-bold">70%</div>
@@ -808,99 +809,9 @@
       }, 500);
   }
 
-  var bar1 = new ProgressBar.Circle(circle1, {
-  color: '#2b2b2b',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
-  strokeWidth: 5,
-  trailWidth: 5,
-  easing: 'easeInOut',
-  duration: 2000,
-  text: {
-    autoStyleContainer: false
-  },
-  from: { color: '#3366ff', width: 5 },
-  to: { color: '#3366ff', width: 5 },
-  // Set default step function for all animate calls
-  step: function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-    circle.path.setAttribute('stroke-width', state.width);
+  
 
-    var value = Math.round(circle.value() * 100);
-    if (value === 0) {
-      circle.setText('');
-    } else {
-      circle.setText(value);
-    }
-
-  }
-});
-bar1.text.style.fontFamily = '"Open sans", Helvetica, sans-serif';
-bar1.text.style.fontSize = '3rem';
-
-bar1.animate(0.90);
-
-var bar2 = new ProgressBar.Circle(circle2, {
-  color: '#2b2b2b',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
-  strokeWidth: 5,
-  trailWidth: 5,
-  easing: 'easeInOut',
-  duration: 2000,
-  text: {
-    autoStyleContainer: false
-  },
-  from: { color: '#3366ff', width: 5 },
-  to: { color: '#3366ff', width: 5 },
-  // Set default step function for all animate calls
-  step: function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-    circle.path.setAttribute('stroke-width', state.width);
-
-    var value = Math.round(circle.value() * 100);
-    if (value === 0) {
-      circle.setText('');
-    } else {
-      circle.setText(value);
-    }
-
-  }
-});
-bar2.text.style.fontFamily = '"Open sans", Helvetica, sans-serif';
-bar2.text.style.fontSize = '3rem';
-bar2.animate(0.85);
-
-var bar3 = new ProgressBar.Circle(circle3, {
-  color: '#2b2b2b',
-  // This has to be the same size as the maximum width to
-  // prevent clipping
-  strokeWidth: 5,
-  trailWidth: 5,
-  easing: 'easeInOut',
-  duration: 2000,
-  text: {
-    autoStyleContainer: false
-  },
-  from: { color: '#3366ff', width: 5 },
-  to: { color: '#3366ff', width: 5 },
-  // Set default step function for all animate calls
-  step: function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-    circle.path.setAttribute('stroke-width', state.width);
-
-    var value = Math.round(circle.value() * 100);
-    if (value === 0) {
-      circle.setText('');
-    } else {
-      circle.setText(value);
-    }
-
-  }
-});
-bar3.text.style.fontFamily = '"Open sans", Helvetica, sans-serif';
-bar3.text.style.fontSize = '3rem';
-bar3.animate(0.6);
+  
 
     new Glider(document.querySelector(".projectGlider"), {
       slidesToShow: 2,
@@ -959,7 +870,106 @@ bar3.animate(0.6);
 
       let counter = 0;
       AOS.init({offset: 80, duration: 300});
+
+function loadSkills() {
+  console.log("Hello");
+}
+
+  var bar1 = new ProgressBar.Circle(circle1, {
+  color: '#2b2b2b',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 5,
+  trailWidth: 5,
+  easing: 'easeInOut',
+  duration: 2000,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#3366ff', width: 5 },
+  to: { color: '#3366ff', width: 5 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
+    }
+
+  }
+});
+bar1.text.style.fontFamily = '"Open sans", Helvetica, sans-serif';
+bar1.text.style.fontSize = '3rem';
+
+bar1.animate(0.95);
+
+var bar2 = new ProgressBar.Circle(circle2, {
+  color: '#2b2b2b',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 5,
+  trailWidth: 5,
+  easing: 'easeInOut',
+  duration: 2000,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#3366ff', width: 5 },
+  to: { color: '#3366ff', width: 5 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
+    }
+
+  }
+});
+bar2.text.style.fontFamily = '"Open sans", Helvetica, sans-serif';
+bar2.text.style.fontSize = '3rem';
+bar2.animate(0.90);
+
+var bar3 = new ProgressBar.Circle(circle3, {
+  color: '#2b2b2b',
+  // This has to be the same size as the maximum width to
+  // prevent clipping
+  strokeWidth: 5,
+  trailWidth: 5,
+  easing: 'easeInOut',
+  duration: 2000,
+  text: {
+    autoStyleContainer: false
+  },
+  from: { color: '#3366ff', width: 5 },
+  to: { color: '#3366ff', width: 5 },
+  // Set default step function for all animate calls
+  step: function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.path.setAttribute('stroke-width', state.width);
+
+    var value = Math.round(circle.value() * 100);
+    if (value === 0) {
+      circle.setText('');
+    } else {
+      circle.setText(value);
+    }
+
+  }
+});
+bar3.text.style.fontFamily = '"Open sans", Helvetica, sans-serif';
+bar3.text.style.fontSize = '3rem';
+bar3.animate(0.75);
   </script>
+
   <script src="js/script.js"></script>
 </body>
 </html>
