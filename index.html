@@ -884,7 +884,6 @@ bar3.text.style.fontSize = '3rem';
     function loadSkills () {
       const scrolled = window.scrollY;
       if (scrolled >= 750) {
-        // console.log("Hello!");
         bar1.animate(0.95);
         bar2.animate(0.90);
         bar3.animate(0.75);
@@ -893,7 +892,6 @@ bar3.text.style.fontSize = '3rem';
           window.removeEventListener("scroll", loadSkills);
         }, 2000);
       }
-      // console.log(scrolled);
     }
 
 
