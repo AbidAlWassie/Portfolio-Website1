@@ -460,6 +460,17 @@
   /*}*/
 }
 
+@media screen and (max-height: 650px) {
+  .intro {
+    position: relative;
+    top: -190px;
+  }
+
+  /*.intro *, .intro > * {*/
+  /*  font-size: 1.3em !important;*/
+  /*}*/
+}
+
 @media (max-width: 1110px) {
   /* .container-side-nav {
     margin-left: 40px;
