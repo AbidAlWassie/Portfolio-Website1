@@ -1,4 +1,199 @@
 window.onload = function () {
+
+  var bar1 = new ProgressBar.Circle(circle1, {
+    color: '#2b2b2b',
+    // This has to be the same size as the maximum width to
+    // prevent clipping
+    strokeWidth: 5,
+    trailWidth: 5,
+    easing: 'easeInOut',
+    duration: 2000,
+    text: {
+      autoStyleContainer: false
+    },
+    from: { color: '#3366ff', width: 5 },
+    to: { color: '#3366ff', width: 5 },
+    // Set default step function for all animate calls
+    step: function(state, circle) {
+      circle.path.setAttribute('stroke', state.color);
+      circle.path.setAttribute('stroke-width', state.width);
+  
+      var value = Math.round(circle.value() * 100);
+      if (value === 0) {
+        circle.setText('');
+      } else {
+        circle.setText(value);
+      }
+  
+    }
+  });
+  bar1.text.style.fontFamily = '"Open sans", Helvetica, sans-serif';
+  bar1.text.style.fontSize = '3rem';
+  
+  
+  var bar2 = new ProgressBar.Circle(circle2, {
+    color: '#2b2b2b',
+    // This has to be the same size as the maximum width to
+    // prevent clipping
+    strokeWidth: 5,
+    trailWidth: 5,
+    easing: 'easeInOut',
+    duration: 2000,
+    text: {
+      autoStyleContainer: false
+    },
+    from: { color: '#3366ff', width: 5 },
+    to: { color: '#3366ff', width: 5 },
+    // Set default step function for all animate calls
+    step: function(state, circle) {
+      circle.path.setAttribute('stroke', state.color);
+      circle.path.setAttribute('stroke-width', state.width);
+  
+      var value = Math.round(circle.value() * 100);
+      if (value === 0) {
+        circle.setText('');
+      } else {
+        circle.setText(value);
+      }
+  
+    }
+  });
+  bar2.text.style.fontFamily = '"Open sans", Helvetica, sans-serif';
+  bar2.text.style.fontSize = '3rem';
+  
+  var bar3 = new ProgressBar.Circle(circle3, {
+    color: '#2b2b2b',
+    // This has to be the same size as the maximum width to
+    // prevent clipping
+    strokeWidth: 5,
+    trailWidth: 5,
+    easing: 'easeInOut',
+    duration: 2000,
+    text: {
+      autoStyleContainer: false
+    },
+    from: { color: '#3366ff', width: 5 },
+    to: { color: '#3366ff', width: 5 },
+    // Set default step function for all animate calls
+    step: function(state, circle) {
+      circle.path.setAttribute('stroke', state.color);
+      circle.path.setAttribute('stroke-width', state.width);
+  
+      var value = Math.round(circle.value() * 100);
+      if (value === 0) {
+        circle.setText('');
+      } else {
+        circle.setText(value);
+      }
+  
+    }
+  });
+  bar3.text.style.fontFamily = '"Open sans", Helvetica, sans-serif';
+  bar3.text.style.fontSize = '3rem';
+  
+  
+      window.addEventListener("scroll", loadSkills);
+  
+      function loadSkills () {
+        const scrolled = window.scrollY;
+        if (scrolled >= 750) {
+          bar1.animate(0.95);
+          bar2.animate(0.90);
+          bar3.animate(0.75);
+  
+          setTimeout(() => {
+            window.removeEventListener("scroll", loadSkills);
+          }, 2000);
+        }
+      }
+  
+  
+    var checkbox = document.querySelector('input[name=theme]');
+    var main = document.getElementById("html");
+  
+    checkbox.addEventListener('change', function() {
+        if(this.checked) {
+          trans();
+          main.className = "";
+            // document.documentElement.setAttribute('data-theme', 'dark')
+        } else {
+          trans();
+          main.className = "dark";
+            // document.documentElement.setAttribute('data-theme', 'light')
+        }
+    })
+  
+    let trans = () => {
+        document.documentElement.classList.add('transition');
+        window.setTimeout(() => {
+            document.documentElement.classList.remove('transition')
+        }, 500);
+    }
+  
+    
+  
+    
+  
+      new Glider(document.querySelector(".projectGlider"), {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        draggable: true,
+        arrows: {
+          prev: ".glider-prev",
+          next: ".glider-next"
+        },
+        responsive: [
+          {
+            breakpoint: 770,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
+          {
+            // breakpoint: 575,
+            // settings: {
+              //   slidesToShow: 2,
+              //   slidesToScroll: 2
+              // },
+              
+            }
+          ]
+        });
+  
+        new Glider(document.querySelector(".testimonialGlider"), {
+          slidesToShow: 1,
+          dots: "#dots",
+          slidesToScroll: 1,
+          draggable: true,
+          arrows: {
+            prev: ".glider-prev2",
+            next: ".glider-next2"
+          },
+          responsive: [
+            {
+              breakpoint: 575,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            },
+            {
+              // breakpoint: 575,
+              // settings: {
+                //   slidesToShow: 2,
+                //   slidesToScroll: 2
+                // },
+                
+              }
+            ]
+        });
+  
+        let counter = 0;
+        AOS.init({offset: 80, duration: 300});
+  
+  
+    
   
   // const sendHttpRequest = (method, url) => {
   //   const xhr = new XMLHttpRequest();
