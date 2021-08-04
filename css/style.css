@@ -446,7 +446,7 @@
 @media screen and (max-height: 880px) {
   .intro {
     position: relative;
-    top: -250px;
+    top: -150px;
   }
   /*.intro *, .intro > * {*/
   /*  font-size: 1.3em !important;*/
@@ -456,7 +456,17 @@
 @media screen and (max-height: 700px) {
   .intro {
     position: relative;
-    top: -320px;
+    top: -150px;
+  }
+  /*.intro *, .intro > * {*/
+  /*  font-size: 1.3em !important;*/
+  /*}*/
+}
+
+@media screen and (max-height: 650px) {
+  .intro {
+    position: relative;
+    top: -190px;
   }
   /*.intro *, .intro > * {*/
   /*  font-size: 1.3em !important;*/
@@ -487,7 +497,6 @@
     float: right;
     position: relative;
     right: -10px;
-    z-index: 1000;
   }
 }
 
@@ -509,7 +518,7 @@
   float: right;
   position: relative;
   top: -33px;
-  z-index: 1000;
+  z-index: 1000000;
 }
 
 input[type="checkbox"] {
