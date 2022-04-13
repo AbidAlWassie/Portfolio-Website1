@@ -2137,9 +2137,14 @@ textarea {
           justify-content: center;
 }
 
+li .footer-text:hover {
+  color: #ffffffee;
+}
+
 .footer-text {
   color: #ffffff8e;
   font-weight: 500;
+  transition: 200ms ease-in-out;
 }
 
 .sl-mid {
